@@ -26,8 +26,6 @@ export default function Presentacion() {
       <div className="blob-bg">
         <img src={imgCarlos} alt="Carlos Ovalles" />
       </div>
-
-      <div className="texto"></div>
     </section>
   );
 }

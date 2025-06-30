@@ -10,6 +10,7 @@ export default function Header() {
     <header>
       <h1>Mi portafolio</h1>
       <button
+        className="header"
         onClick={() => ctx.setTheme(ctx.theme === "light" ? "dark" : "light")}
       >
         Cambiar a {ctx.theme === "light" ? "modo oscuro" : "modo claro"}{" "}
