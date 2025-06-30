@@ -26,6 +26,36 @@
   font-style: normal;
 }
 
+body.light {
+  --main-bg: #fff;
+  --main-text: #222;
+
+  --main-secondary: #2f6459;
+
+  --header-bg: #2f6459;
+  --header-text: #fff;
+}
+
+body.dark {
+  --main-bg: #222;
+  --main-text: #fff;
+
+  --main-secondary: #4d0c0c;
+
+  --header-bg: #4d0c0c;
+  --header-text: #fff;
+}
+
 body {
   font-family: "Quicksand";
+  margin: 0px;
+  padding: 0px;
+  transition: all 0.3s ease-in-out;
+  background: var(--main-bg);
+  color: var(--main-text);
+  transition: background 0.3s, color 0.3s;
+}
+
+* {
+  transition: all 0.3s ease-in-out;
 }

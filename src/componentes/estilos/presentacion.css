@@ -1,0 +1,79 @@
+section {
+  margin: 10px auto;
+
+  width: 60%;
+
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section > div.texto {
+  flex: 1 1 50%;
+  max-width: 100%;
+
+  padding: 15px;
+}
+
+div.blob-bg {
+  width: 270px;
+  height: 350px;
+  background-color: var(--main-secondary);
+  border-radius: 50%;
+  z-index: 0;
+  animation: blobRadius2 6s infinite linear;
+}
+
+img {
+  width: 250px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 1rem auto;
+  transition: border-radius 0.5s;
+  animation: blobRadius 6s infinite linear;
+}
+
+@keyframes blobRadius {
+  0% {
+    transform: translate(0px, 0px);
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+  }
+  25% {
+    transform: translate(0px, 20px);
+    border-radius: 60% 40% 55% 45% / 45% 60% 40% 55%;
+  }
+  50% {
+    transform: translate(0px, 0px);
+    border-radius: 50% 60% 40% 60% / 60% 50% 60% 40%;
+  }
+  75% {
+    transform: translate(0px, -20px);
+    border-radius: 40% 55% 60% 45% / 55% 40% 60% 45%;
+  }
+  100% {
+    transform: translate(0px, 0px);
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+  }
+}
+
+/* Ajuste de animación para 270x350px */
+@keyframes blobRadius2 {
+  0% {
+    border-radius: 60% 40% 55% 45% / 55% 60% 45% 50%;
+  }
+  20% {
+    border-radius: 55% 45% 60% 40% / 50% 55% 60% 45%;
+  }
+  40% {
+    border-radius: 50% 60% 45% 55% / 60% 50% 55% 40%;
+  }
+  60% {
+    border-radius: 45% 55% 50% 60% / 55% 45% 50% 60%;
+  }
+  80% {
+    border-radius: 60% 50% 45% 55% / 45% 60% 55% 50%;
+  }
+  100% {
+    border-radius: 60% 40% 55% 45% / 55% 60% 45% 50%;
+  }
+}

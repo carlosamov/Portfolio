@@ -1,13 +1,22 @@
 import React from "react";
 
-import "./App.css";
+import { useGlobalContext } from "./componentes/GlobalContex.jsx";
 
-function App() {
+import "./App.css";
+import Header from "./componentes/Header.jsx";
+import Presentacion from "./componentes/Presentacion.jsx";
+
+export default function App() {
+  const ctx = useGlobalContext();
+
+  React.useEffect(() => {
+    document.body.className = ctx.theme; // Default theme
+  }, [ctx.theme]);
+
   return (
     <>
-      <h1>Mi portfolio</h1>
+      <Header />
+      <Presentacion />
     </>
   );
 }
-
-export default App;

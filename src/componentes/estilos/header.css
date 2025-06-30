@@ -1,0 +1,20 @@
+button {
+  border: none;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+  padding: 0;
+  font: inherit;
+  outline: inherit;
+}
+
+header {
+  padding: 5px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: space-around;
+
+  background: var(--header-bg);
+  color: var(--header-text);
+}
