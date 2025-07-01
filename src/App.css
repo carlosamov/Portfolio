@@ -30,10 +30,10 @@ body.light {
   --main-bg: #fff;
   --main-text: #222;
 
-  --main-secondary: #2f6459;
+  --main-secondary: #cacaca;
 
-  --header-bg: #2f6459;
-  --header-text: #fff;
+  --header-bg: #cacaca;
+  --header-text: #000000;
 }
 
 body.dark {
