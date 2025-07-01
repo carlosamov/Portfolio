@@ -1,0 +1,30 @@
+div.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+div.carousel-container {
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #000000;
+}
+
+div.carousel img {
+  width: 200%;
+  max-width: 1000px;
+  border-radius: 10px;
+  border: solid black 1px;
+  object-fit: cover;
+}
+
+div.carousel button.next,
+div.carousel button.prev {
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}

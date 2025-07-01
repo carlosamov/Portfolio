@@ -24,7 +24,7 @@ export default function Presentacion() {
       </div>
 
       <div className="blob-bg">
-        <img src={imgCarlos} alt="Carlos Ovalles" />
+        <img className="pfp" src={imgCarlos} alt="Carlos Ovalles" />
       </div>
     </section>
   );

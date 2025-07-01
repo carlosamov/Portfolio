@@ -40,22 +40,35 @@ body.dark {
   --main-bg: #222;
   --main-text: #fff;
 
-  --main-secondary: #4d0c0c;
+  --main-secondary: #3e3e3e;
 
-  --header-bg: #4d0c0c;
+  --header-bg: #3e3e3e;
   --header-text: #fff;
 }
 
 body {
-  font-family: "Quicksand";
   margin: 0px;
   padding: 0px;
   transition: all 0.3s ease-in-out;
   background: var(--main-bg);
   color: var(--main-text);
-  transition: background 0.3s, color 0.3s;
+  transition: all 0.3s, color 0.3s;
 }
 
 * {
   transition: all 0.3s ease-in-out;
+  font-family: "Quicksand";
+}
+
+svg {
+  color: var(--main-text);
+}
+
+section {
+  margin: 10px auto;
+  width: 60%;
+
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
 }

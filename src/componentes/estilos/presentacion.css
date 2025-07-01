@@ -1,18 +1,6 @@
-section {
-  margin: 10px auto;
-
-  width: 60%;
-
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-section > div.texto {
+section.presentacion > div.texto {
   flex: 1 1 50%;
   max-width: 100%;
-
-  padding: 15px;
 }
 
 div.blob-bg {
@@ -24,7 +12,7 @@ div.blob-bg {
   animation: blobRadius2 6s infinite linear;
 }
 
-img {
+img.pfp {
   width: 250px;
   object-fit: cover;
   display: block;

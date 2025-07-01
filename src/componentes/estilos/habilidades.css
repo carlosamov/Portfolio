@@ -1,0 +1,20 @@
+section.habilidades {
+  flex-direction: column;
+}
+
+div.NavBar {
+  display: flex;
+}
+
+div.NavBar * {
+  flex: 1 1;
+}
+
+img.img-estudiantes {
+  display: block;
+  width: 600px;
+  margin: 10px auto;
+  border-radius: 20px;
+  border: solid black 1px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.361);
+}
