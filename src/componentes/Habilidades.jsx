@@ -13,6 +13,21 @@ import imgUsuarios from "../assets/Usuarios.png";
 export default function Habilidades() {
   const [page, setPage] = React.useState(1);
 
+  //Logica para desplazamiento suave entre secciones
+  const [desplazando, setDesplazando] = React.useState(false);
+  const containerRef = React.useRef(null);
+
+  const handleScroll = (index) => {
+    if (desplazando) return;
+    setDesplazando(true);
+
+    setTimeout(() => {
+      setPage(index);
+      setDesplazando(false);
+    }, 500);
+  };
+
+  //Estilo de la navBar
   const selected = {
     backgroundColor: "var(--main-secondary)",
     color: "var(--main-text)",
@@ -25,28 +40,30 @@ export default function Habilidades() {
         <button
           style={page == 1 ? selected : undefined}
           className="nav 1"
-          onClick={() => setPage(1)}
+          onClick={() => handleScroll(1)}
         >
           Sistema de Gestión de Estudiantes
         </button>
         <button
           style={page == 2 ? selected : undefined}
           className="nav 2"
-          onClick={() => setPage(2)}
+          onClick={() => handleScroll(2)}
         >
           Sistema de Automatización de Presupuestos
         </button>
         <button
           style={page == 3 ? selected : undefined}
           className="nav 3"
-          onClick={() => setPage(3)}
+          onClick={() => handleScroll(3)}
         >
           Carrera Academica
         </button>
       </div>
-      {page == 1 && <GestionEstudiantes />}
-      {page == 2 && <AutomatizacionPresupuestos />}
-      {page == 3 && <p>No</p>}
+      <div className={`carrusel-deslizar ${desplazando ? "desplazando" : ""}`}>
+        {page == 1 && <GestionEstudiantes />}
+        {page == 2 && <AutomatizacionPresupuestos />}
+        {page == 3 && <CarreraUniversitaria />}
+      </div>
     </section>
   );
 }
@@ -55,11 +72,7 @@ function GestionEstudiantes() {
   return (
     <div>
       <h2>Sistema de Gestión de Estudiantes</h2>
-      <img
-        className="img-estudiantes"
-        src={imgEstudiantes}
-        alt="Captura de estudiantes"
-      />
+
       <p>
         Se desarrolló una aplicacion web integral para la gestion de
         matriculación de estudiantes, junto con estadísticas de estudiantes
@@ -79,11 +92,16 @@ function GestionEstudiantes() {
             base de datos PostgreSQL.
           </p>
         </li>
-        <p>
-          Gracias a este proyecto aprendí a intercontectar los distintos
-          elementos de una apliación, siguiendo los patrones de diseño MVC.
-        </p>
       </ul>
+      <p>
+        Gracias a este proyecto aprendí a interconectar los distintos elementos
+        de una aplicación, siguiendo los patrones de diseño MVC.
+      </p>
+      <img
+        className="img-estudiantes"
+        src={imgEstudiantes}
+        alt="Captura de estudiantes"
+      />
     </div>
   );
 }
@@ -92,6 +110,26 @@ function AutomatizacionPresupuestos() {
   return (
     <div>
       <h2>Automatización de Presupuestos (En Progreso)</h2>
+      <p>
+        Actualmente estoy creando una aplicacion web como proyecto académico
+        para la creación de una plataforma para automatizar el proceso de
+        elaboración y gestión de presupuestos.
+      </p>
+      <h3>Tecnológias Aplicadas</h3>
+      <ul>
+        <li>
+          <b>Frontend con React:</b> Mi principal herramienta de creación de
+          interfaces es React, domino los Hooks basicos como useState, useEffect
+          o useMemo y entiendo el ciclo de vida del componente de manera sólida.
+        </li>
+        <li>
+          <p>
+            <b>Backend con Node.js:</b> Estoy diseñando en su totalidad la API
+            RESTful usando Node.js con Express, para el servidor y Sequelize (un
+            ORM para Node.js) para manipular la base de datos PostgreSQL.
+          </p>
+        </li>
+      </ul>
       <Carousel
         images={[
           imgLogin,
@@ -102,30 +140,91 @@ function AutomatizacionPresupuestos() {
         ]}
       />
       <p>
-        Se desarrolló una aplicacion web como proyecto académico para la
-        creación de una plataforma para automatizar el proceso de elbaroación y
-        gestión de presupuestos.
+        Gracias a este proyecto aprendí a crear una interacción más fluida entre
+        componentes y afinar los conocimientos ya presentes de React.
       </p>
-      <h3>Tecnológias Aplicadas</h3>
+    </div>
+  );
+}
+
+import imgUCAB from "../assets/LogoUCAB.png";
+import imgUnity from "../assets/Unity.webp";
+import imgUNEXCA from "../assets/Logo_Unexca.jpg";
+
+function CarreraUniversitaria() {
+  return (
+    <>
+      <h2>Carrera Académica</h2>
       <ul>
         <li>
-          <b>Frontend con React:</b> Mi principal herramienta de creación de
-          interfaces es React, domino los Hooks basicos y entiendo el ciclo de
-          vida del componente de manera sólida.
+          <h3>
+            Universidad Católica Andres Bello (UCAB) -{" "}
+            <i>Ingeniería en Computación</i>
+          </h3>
+          <div className="div-academica">
+            <p>
+              Cursé cinco semestres en esta institución, donde adquirí una
+              sólida base en programación estructurada y algoritmos usando C++.
+              Aprendí sobre estructuras de datos fundamentales y desarrollé un
+              sistema de gestión de estudiantes como proyecto en consola, lo que
+              me permitió afianzar mis primeros conocimientos aplicados.
+            </p>
+            <img
+              id="img-ucab"
+              className="img-academica"
+              src={imgUCAB}
+              alt="Logo de UCAB"
+            />
+          </div>
         </li>
         <li>
-          <p>
-            <b>Backend con Node.js:</b> Diseñé en su totalidad la API RESTful
-            usando Node.js con Express, para el servidor y Sequelize (un ORM
-            para Node.js) para manipular la base de datos PostgreSQL.
-          </p>
+          <h3>
+            Formación Autodidacta -{" "}
+            <i>Programación Orientada a Objetos con C# y desarrollo en Unity</i>
+          </h3>
+          <div className="div-academica">
+            <p>
+              Durante una pausa académica por razones personales, profundicé por
+              mi cuenta en programación orientada a objetos con C#. Apliqué
+              estos conocimientos desarrollando videojuegos como pasatiempo con
+              Unity, entre ellos un nivel inspirado en Mario, interfaces
+              interactivas y enfrentamientos con jefes. Esta etapa me permitió
+              interiorizar profundamente la lógica de programación y su relación
+              con la estructura y reutilización del código.
+            </p>
+            <img
+              id="img-unity"
+              className="img-academica"
+              src={imgUnity}
+              alt="Logo de Unity"
+            />
+          </div>
         </li>
-        <p>
-          Gracias a este proyecto aprendí a crear una interacción más fluida
-          entre componentes y afinar los conocimientos ya presentes de React.
-        </p>
+        <li>
+          <h3>
+            Universidad Nacional Experimental de la Gran Caracas (UNEXCA) -{" "}
+            <i>Ingeniería en Informática (cursando)</i>
+          </h3>
+          <div className="div-academica">
+            <p>
+              Decidí retomar formalmente mis estudios y actualmente curso la
+              carrera de Ingeniería en Informática. Durante esta etapa, he
+              consolidado mis conocimientos a través del desarrollo de proyectos
+              más robustos, como un Sistema de Gestión de Estudiantes y un
+              Sistema de Automatización de Presupuestos, integrando lo aprendido
+              en diseño de interfaces, estructuras lógicas y automatización de
+              procesos.
+            </p>
+            <img
+              id="img-unexca"
+              className="img-academica"
+              src={imgUNEXCA}
+              alt="Logo de UNEXCA"
+            />
+          </div>
+        </li>
       </ul>
-    </div>
+    </>
   );
 }
 

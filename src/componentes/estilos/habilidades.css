@@ -4,8 +4,11 @@ section.habilidades {
 
 div.NavBar {
   display: flex;
+  flex-wrap: wrap;
   position: sticky;
-  top: 0;
+  top: 80px;
+  z-index: 999;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 button.nav {
@@ -24,9 +27,38 @@ button.nav:hover {
 
 img.img-estudiantes {
   display: block;
-  width: 600px;
+  max-width: 600px;
+  min-width: 300px;
+  width: 100%;
   margin: 10px auto;
   border-radius: 20px;
-  border: solid black 1px;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.361);
+}
+
+.img-academica {
+  max-width: 120px;
+  width: 100%;
+  margin: 0px 15px;
+  padding: 15px;
+}
+
+#img-ucab,
+#img-unexca {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.div-academica {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.carrusel-deslizar {
+  opacity: 1;
+  transition: opacity 100ms linear;
+}
+
+.carrusel-deslizar.desplazando {
+  opacity: 0;
 }
