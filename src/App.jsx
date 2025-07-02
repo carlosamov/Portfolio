@@ -11,7 +11,7 @@ export default function App() {
   const ctx = useGlobalContext();
 
   React.useEffect(() => {
-    document.body.className = ctx.theme; // Default theme
+    document.body.className = ctx.theme;
   }, [ctx.theme]);
 
   return (

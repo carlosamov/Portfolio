@@ -6,7 +6,7 @@ const GlobalContext = React.createContext();
 // Proveedor del contexto
 export const GlobalProvider = ({ children }) => {
   const [state, setState] = React.useState({
-    theme: "light",
+    theme: "dark",
   });
 
   // Puedes agregar funciones para modificar el estado global
