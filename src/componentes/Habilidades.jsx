@@ -18,7 +18,7 @@ export default function Habilidades() {
   const containerRef = React.useRef(null);
 
   const handleScroll = (index) => {
-    if (desplazando) return;
+    if (desplazando || index == page) return;
     setDesplazando(true);
 
     setTimeout(() => {
