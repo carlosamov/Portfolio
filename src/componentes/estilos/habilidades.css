@@ -2,13 +2,20 @@ section.habilidades {
   flex-direction: column;
 }
 
-div.NavBar {
+nav.NavBar {
   display: flex;
   flex-wrap: wrap;
   position: sticky;
   top: 80px;
-  z-index: 999;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  z-index: 1001;
+}
+
+nav.NavBar.sticked > :first-child {
+  border-radius: 0px 0px 0px 10px;
+}
+
+nav.NavBar.sticked > :last-child {
+  border-radius: 0px 0px 10px 0px;
 }
 
 button.nav {
@@ -17,7 +24,14 @@ button.nav {
   border: 0px;
   padding: 10px;
 
+  font-size: 1rem;
+
   cursor: pointer;
+}
+
+button.nav.sticked {
+  background-color: var(--main-secondary);
+  color: var(--main-text);
 }
 
 button.nav:hover {

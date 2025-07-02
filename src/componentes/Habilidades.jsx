@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 import "./estilos/habilidades.css";
 
@@ -15,9 +15,27 @@ export default function Habilidades() {
 
   //Logica para desplazamiento suave entre secciones
   const [desplazando, setDesplazando] = React.useState(false);
-  const containerRef = React.useRef(null);
 
-  const handleScroll = (index) => {
+  //Logica para cambiar el estilo del navBar
+  const navRef = React.useRef(null);
+  React.useEffect(() => {
+    let lastSticky = false;
+    const handleScroll = () => {
+      if (!navRef.current) return;
+      const { top } = navRef.current.getBoundingClientRect();
+      const isSticky = top <= 80;
+      if (isSticky !== lastSticky) {
+        navRef.current.classList.toggle("sticked", isSticky);
+        lastSticky = isSticky;
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const handleSelect = (index) => {
     if (desplazando || index == page) return;
     setDesplazando(true);
 
@@ -35,30 +53,32 @@ export default function Habilidades() {
 
   return (
     <section className="habilidades">
-      <h2>Proyectos Destacados y Habilidades Aplicadas</h2>
-      <div className="NavBar">
+      <h1 style={{ fontSize: "60px", margin: "20px 0px" }}>
+        Proyectos Destacados y Habilidades Aplicadas
+      </h1>
+      <nav ref={navRef} className="NavBar">
         <button
           style={page == 1 ? selected : undefined}
           className="nav 1"
-          onClick={() => handleScroll(1)}
+          onClick={() => handleSelect(1)}
         >
           Sistema de Gestión de Estudiantes
         </button>
         <button
           style={page == 2 ? selected : undefined}
           className="nav 2"
-          onClick={() => handleScroll(2)}
+          onClick={() => handleSelect(2)}
         >
           Sistema de Automatización de Presupuestos
         </button>
         <button
           style={page == 3 ? selected : undefined}
           className="nav 3"
-          onClick={() => handleScroll(3)}
+          onClick={() => handleSelect(3)}
         >
           Carrera Academica
         </button>
-      </div>
+      </nav>
       <div className={`carrusel-deslizar ${desplazando ? "desplazando" : ""}`}>
         {page == 1 && <GestionEstudiantes />}
         {page == 2 && <AutomatizacionPresupuestos />}
@@ -81,9 +101,11 @@ function GestionEstudiantes() {
       <h3>Tecnológias Aplicadas</h3>
       <ul>
         <li>
-          <b>Frontend con React:</b> Construí la interfaz de usuario interactiva
-          y responsiva, gestionando el estado de la aplicación y la comunicación
-          con el backend.
+          <p>
+            <b>Frontend con React:</b> Construí la interfaz de usuario
+            interactiva y responsiva, gestionando el estado de la aplicación y
+            la comunicación con el backend.
+          </p>
         </li>
         <li>
           <p>
@@ -118,9 +140,12 @@ function AutomatizacionPresupuestos() {
       <h3>Tecnológias Aplicadas</h3>
       <ul>
         <li>
-          <b>Frontend con React:</b> Mi principal herramienta de creación de
-          interfaces es React, domino los Hooks basicos como useState, useEffect
-          o useMemo y entiendo el ciclo de vida del componente de manera sólida.
+          <p>
+            <b>Frontend con React:</b> Mi principal herramienta de creación de
+            interfaces es React, domino los Hooks basicos como useState,
+            useEffect o useMemo y entiendo el ciclo de vida del componente de
+            manera sólida.
+          </p>
         </li>
         <li>
           <p>
