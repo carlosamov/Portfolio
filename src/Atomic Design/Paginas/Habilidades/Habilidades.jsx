@@ -6,7 +6,7 @@ import GestionEstudiantes from "../../Organismos/Gestion Estudiantes/GestionEstu
 import AutomatizacionPresupuestos from "../../Organismos/Automatizacion Presupuestos/AutomatizacionPresupuestos";
 
 import NavBar from "../../Moléculas/NavBar/NavBar";
-import Boton from "../../Atomos/Boton/Boton";
+import { BotonNavBar } from "../../Atomos/Boton/Boton";
 import Seccion from "../../Moléculas/Seccion/Seccion";
 
 export default function Habilidades() {
@@ -16,24 +16,15 @@ export default function Habilidades() {
     <Seccion style="column">
       <h2>Proyectos Destacados y Habilidades Aplicadas</h2>
       <NavBar>
-        <Boton
-          style={page == 1 ? "btnNavBar selected" : "btnNavBar"}
-          onClick={() => setPage(1)}
-        >
+        <BotonNavBar selected={page === 1} onClick={() => setPage(1)}>
           Sistema de Gestión de Estudiantes
-        </Boton>
-        <Boton
-          style={page == 2 ? "btnNavBar selected" : "btnNavBar"}
-          onClick={() => setPage(2)}
-        >
+        </BotonNavBar>
+        <BotonNavBar selected={page === 3} onClick={() => setPage(2)}>
           Sistema de Automatización de Presupuestos
-        </Boton>
-        <Boton
-          style={page == 3 ? "btnNavBar selected" : "btnNavBar"}
-          onClick={() => setPage(3)}
-        >
+        </BotonNavBar>
+        <BotonNavBar selected={page === 3} onClick={() => setPage(3)}>
           Carrera Academica
-        </Boton>
+        </BotonNavBar>
       </NavBar>
       {page == 1 && <GestionEstudiantes />}
       {page == 2 && <AutomatizacionPresupuestos />}

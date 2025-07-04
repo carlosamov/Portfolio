@@ -3,7 +3,7 @@ import { useGlobalContext } from "../../../Contexto/GlobalContex.jsx";
 
 import styles from "./cabecera.module.css";
 
-import Button from "../../Atomos/Boton/Boton.jsx";
+import { BotonHeader } from "../../Atomos/Boton/Boton.jsx";
 
 export default function Header() {
   const ctx = useGlobalContext();
@@ -11,13 +11,12 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <h1>Mi portafolio</h1>
-      <Button
-        style="btnHeader"
+      <BotonHeader
         onClick={() => ctx.setTheme(ctx.theme === "light" ? "dark" : "light")}
       >
         Cambiar a {ctx.theme === "light" ? "modo oscuro" : "modo claro"}{" "}
         {ctx.theme === "light" ? <FaMoon /> : <FaSun />}
-      </Button>
+      </BotonHeader>
     </header>
   );
 }

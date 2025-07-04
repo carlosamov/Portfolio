@@ -5,7 +5,7 @@ import styles from "./carrusel.module.css";
 import { FaArrowAltCircleRight } from "react-icons/fa";
 import { FaArrowAltCircleLeft } from "react-icons/fa";
 
-import Boton from "../../Atomos/Boton/Boton";
+import { BotonNavigation } from "../../Atomos/Boton/Boton";
 
 export default function Carrusel(props) {
   const [index, setIndex] = React.useState(0);
@@ -20,9 +20,9 @@ export default function Carrusel(props) {
 
   return (
     <div className={styles.carrusel}>
-      <Boton style="btnNavigation" onClick={prev}>
+      <BotonNavigation onClick={prev}>
         <FaArrowAltCircleLeft />
-      </Boton>
+      </BotonNavigation>
       <div className={styles.carruselContainer}>
         <div
           className={styles.carruselFrame}
@@ -39,9 +39,9 @@ export default function Carrusel(props) {
         </div>
       </div>
 
-      <Boton style="btnNavigation" onClick={next}>
+      <BotonNavigation onClick={next}>
         <FaArrowAltCircleRight />
-      </Boton>
+      </BotonNavigation>
     </div>
   );
 }

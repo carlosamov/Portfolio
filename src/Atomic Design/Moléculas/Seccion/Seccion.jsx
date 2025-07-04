@@ -10,6 +10,5 @@ export default function Seccion(props) {
       else if (st == "column") finalStyles.push(styles.column);
     });
   }
-  console.log(finalStyles);
   return <section className={finalStyles.join(" ")}>{props.children}</section>;
 }
