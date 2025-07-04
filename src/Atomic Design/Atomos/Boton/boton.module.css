@@ -1,0 +1,49 @@
+.btnDefault {
+  border: solid 1px black;
+  border-radius: 20px;
+
+  padding: 10px 15px;
+  height: 50px;
+
+  background-color: var(--main-bg);
+
+  color: inherit;
+  cursor: pointer;
+}
+.btnDefault:hover {
+  background-color: var(--main-secondary);
+}
+
+.btnHeader {
+  border: none;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+  padding: 0;
+  font: inherit;
+  outline: inherit;
+}
+
+.btnNavigation {
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.btnNavBar {
+  flex: 1 1;
+
+  border: 0px;
+  padding: 10px;
+
+  cursor: pointer;
+}
+.btnNavBar.selected {
+  background-color: var(--main-secondary);
+  color: var(--main-text);
+}
+.btnNavBar:hover {
+  background-color: var(--main-secondary);
+  color: var(--main-text);
+}

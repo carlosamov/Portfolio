@@ -63,12 +63,3 @@ body {
 svg {
   color: var(--main-text);
 }
-
-section {
-  margin: 10px auto;
-  width: 60%;
-
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-}

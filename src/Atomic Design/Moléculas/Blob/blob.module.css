@@ -1,9 +1,4 @@
-section.presentacion > div.texto {
-  flex: 1 1 50%;
-  max-width: 100%;
-}
-
-div.blob-bg {
+.blob {
   width: 270px;
   height: 350px;
   background-color: var(--main-secondary);
@@ -12,7 +7,7 @@ div.blob-bg {
   animation: blobRadius2 6s infinite linear;
 }
 
-img.pfp {
+.blob > * {
   width: 250px;
   object-fit: cover;
   display: block;

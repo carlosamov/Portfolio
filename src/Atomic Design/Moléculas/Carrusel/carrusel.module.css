@@ -1,11 +1,11 @@
-div.carousel {
+.carrusel {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
 }
 
-div.carousel-container {
+.carruselContainer {
   width: 640px;
   height: 360px;
   overflow: hidden;
@@ -13,23 +13,15 @@ div.carousel-container {
   box-shadow: 0 0 10px #000000;
 }
 
-div.carousel-frame {
+.carruselFrame {
   display: flex;
   transition: all 0.5s ease-in-out;
   width: 100%;
   height: 100%;
 }
 
-div.carousel img {
+.img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-div.carousel button.next,
-div.carousel button.prev {
-  font-size: 2rem;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
 }

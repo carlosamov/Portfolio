@@ -1,11 +1,11 @@
 import React from "react";
 
-import { useGlobalContext } from "./componentes/GlobalContex.jsx";
+import { useGlobalContext } from "./Contexto/GlobalContex.jsx";
 
 import "./App.css";
-import Header from "./componentes/Header.jsx";
-import Presentacion from "./componentes/Presentacion.jsx";
-import Habilidades from "./componentes/Habilidades.jsx";
+import Cabecera from "./Atomic Design/Paginas/Cabecera/Cabecera.jsx";
+import Presentacion from "./Atomic Design/Paginas/Presentación/Presentacion.jsx";
+import Habilidades from "./Atomic Design/Paginas/Habilidades/Habilidades.jsx";
 
 export default function App() {
   const ctx = useGlobalContext();
@@ -16,7 +16,7 @@ export default function App() {
 
   return (
     <>
-      <Header />
+      <Cabecera />
       <Presentacion />
       <Habilidades />
     </>

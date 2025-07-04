@@ -1,21 +1,23 @@
 import { FaMoon, FaSun } from "react-icons/fa";
-import { useGlobalContext } from "./GlobalContex.jsx";
+import { useGlobalContext } from "../../../Contexto/GlobalContex.jsx";
 
-import "./estilos/header.css";
+import styles from "./cabecera.module.css";
+
+import Button from "../../Atomos/Boton/Boton.jsx";
 
 export default function Header() {
   const ctx = useGlobalContext();
 
   return (
-    <header>
+    <header className={styles.header}>
       <h1>Mi portafolio</h1>
-      <button
-        className="header"
+      <Button
+        style="btnHeader"
         onClick={() => ctx.setTheme(ctx.theme === "light" ? "dark" : "light")}
       >
         Cambiar a {ctx.theme === "light" ? "modo oscuro" : "modo claro"}{" "}
         {ctx.theme === "light" ? <FaMoon /> : <FaSun />}
-      </button>
+      </Button>
     </header>
   );
 }

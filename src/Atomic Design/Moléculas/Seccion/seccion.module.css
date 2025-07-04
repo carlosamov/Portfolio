@@ -1,0 +1,17 @@
+.seccion {
+  margin: 10px auto;
+  width: 60%;
+
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row;
+}

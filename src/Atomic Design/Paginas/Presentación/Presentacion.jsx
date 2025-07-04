@@ -1,13 +1,14 @@
 import React from "react";
 
-import "./estilos/presentacion.css";
+import imgCarlos from "../../../assets/foto de perfil.jpeg";
 
-import imgCarlos from "../assets/foto de perfil.jpeg";
+import Seccion from "../../Moléculas/Seccion/Seccion";
+import Blob from "../../Moléculas/Blob/Blob";
 
 export default function Presentacion() {
   return (
-    <section className="presentacion">
-      <div className="texto">
+    <Seccion>
+      <div style={{ flex: "1 1 50%", maxWidth: "50%" }}>
         <h2 style={{ fontSize: "20px", margin: "0" }}>¡Hola! Soy</h2>
         <h1 style={{ fontSize: "60px", margin: "0" }}>Carlos Ovalles</h1>
         <p>
@@ -23,9 +24,9 @@ export default function Presentacion() {
         </p>
       </div>
 
-      <div className="blob-bg">
-        <img className="pfp" src={imgCarlos} alt="Carlos Ovalles" />
-      </div>
-    </section>
+      <Blob>
+        <img src={imgCarlos} alt="imagen Carlos Ovalles" />
+      </Blob>
+    </Seccion>
   );
 }
