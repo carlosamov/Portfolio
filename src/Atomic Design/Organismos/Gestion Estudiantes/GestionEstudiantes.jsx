@@ -11,8 +11,8 @@ export default function GestionEstudiantes() {
         alt="Captura de estudiantes"
       />
       <p>
-        Se desarrolló una aplicacion web integral para la gestion de
-        matriculación de estudiantes, junto con estadísticas de estudiantes
+        Desarrollé en su totalidad una aplicacion web integral para la gestion
+        de matriculación de estudiantes, junto con estadísticas de estudiantes
         registrados a lo largo del tiempo, asi como administración de secciones.
       </p>
       <h3>Tecnológias Aplicadas</h3>

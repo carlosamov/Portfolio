@@ -20,9 +20,9 @@ export default function AutomatizacionPresupuestos() {
         ]}
       />
       <p>
-        Se desarrolló una aplicacion web como proyecto académico para la
-        creación de una plataforma para automatizar el proceso de elbaroación y
-        gestión de presupuestos.
+        Actualmente se encuentra en desarrollo una aplicacion web como proyecto
+        académico para la creación de una plataforma para automatizar el proceso
+        de elaboración y gestión de presupuestos.
       </p>
       <h3>Tecnológias Aplicadas</h3>
       <ul>
