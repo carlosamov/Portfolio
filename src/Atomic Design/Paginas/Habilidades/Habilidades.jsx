@@ -4,6 +4,7 @@ import "./habilidades.css";
 
 import GestionEstudiantes from "../../Organismos/Gestion Estudiantes/GestionEstudiantes";
 import AutomatizacionPresupuestos from "../../Organismos/Automatizacion Presupuestos/AutomatizacionPresupuestos";
+import CarreraUniversitaria from "../../Organismos/Carrera Academica/CarreraAcademica";
 
 import NavBar from "../../Moléculas/NavBar/NavBar";
 import { BotonNavBar } from "../../Atomos/Boton/Boton";
@@ -28,7 +29,7 @@ export default function Habilidades() {
       </NavBar>
       {page == 1 && <GestionEstudiantes />}
       {page == 2 && <AutomatizacionPresupuestos />}
-      {page == 3 && <p>No</p>}
+      {page == 3 && <CarreraUniversitaria />}
     </Seccion>
   );
 }
