@@ -1,49 +1,45 @@
 @font-face {
   font-family: "Quicksand";
-  src: url("./fonts/Quicksand-Bold.ttf") format("truetype");
+  src: url("./Fuentes/Quicksand-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Quicksand";
-  src: url("./fonts/Quicksand-Light.ttf") format("truetype");
+  src: url("./Fuentes/Quicksand-Light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Quicksand";
-  src: url("./fonts/Quicksand-Medium.ttf") format("truetype");
+  src: url("./Fuentes/Quicksand-Medium.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Quicksand";
-  src: url("./fonts/Quicksand-Regular.ttf") format("truetype");
+  src: url("./Fuentes/Quicksand-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 body.light {
-  --main-bg: #fff;
-  --main-text: #222;
+  --main-fondo: #fff;
+  --main-texto: #222;
 
-  --main-secondary: #cacaca;
-
-  --header-bg: #cacaca;
-  --header-text: #000000;
+  --secondary-fondo: #cacaca;
+  --secondary-texto: #222;
 }
 
 body.dark {
-  --main-bg: #222;
-  --main-text: #fff;
+  --main-fondo: #222;
+  --main-texto: #fff;
 
-  --main-secondary: #3e3e3e;
-
-  --header-bg: #3e3e3e;
-  --header-text: #fff;
+  --secondary-fondo: #3e3e3e;
+  --secondarty-texto: #cacaca;
 }
 
 body {
@@ -51,9 +47,9 @@ body {
   padding: 0px;
   transition: all 0.3s ease-in-out;
   font-size: 1.2rem;
-  background: var(--main-bg);
-  color: var(--main-text);
-  transition: all 0.3s, color 0.3s;
+  background: var(--main-fondo);
+  color: var(--main-texto);
+  transition: all 0.3s ease-in-out;
 }
 
 * {

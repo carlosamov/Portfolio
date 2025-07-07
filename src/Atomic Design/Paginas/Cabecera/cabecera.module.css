@@ -3,8 +3,18 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
 
-  background: var(--header-bg);
-  color: var(--header-text);
+  background: var(--secondary-fondo);
+  color: var(--secondary-texto);
+
+  position: sticky;
+  top: 0px;
+  z-index: 1000;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
 }

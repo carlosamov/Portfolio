@@ -1,7 +1,7 @@
 .blob {
   width: 270px;
   height: 350px;
-  background-color: var(--main-secondary);
+  background-color: var(--secondary-fondo);
   border-radius: 50%;
   z-index: 0;
   animation: blobRadius2 6s infinite linear;
