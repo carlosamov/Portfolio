@@ -1,10 +1,13 @@
 import imgUCAB from "../../../assets/LogoUCAB.png";
 import imgUnity from "../../../assets/Unity.webp";
 import imgUNEXCA from "../../../assets/Logo_Unexca.jpg";
+import Seccion from "../../Moléculas/Seccion/Seccion";
 
-export default function CarreraUniversitaria() {
+import styles from "./CarreraAcademica.module.css";
+
+export default function CarreraAcademica() {
   return (
-    <>
+    <Seccion>
       <h2>Carrera Académica</h2>
       <ul>
         <li>
@@ -12,7 +15,8 @@ export default function CarreraUniversitaria() {
             Universidad Católica Andres Bello (UCAB) -{" "}
             <i>Ingeniería en Computación</i>
           </h3>
-          <div className="div-academica">
+          <div className={styles.seccionAcademica}>
+            <img className={styles.imgUCAB} src={imgUCAB} alt="Logo de UCAB" />
             <p>
               Cursé cinco semestres en esta institución, donde adquirí una
               sólida base en programación estructurada y algoritmos usando C++.
@@ -20,12 +24,6 @@ export default function CarreraUniversitaria() {
               sistema de gestión de estudiantes como proyecto en consola, lo que
               me permitió afianzar mis primeros conocimientos aplicados.
             </p>
-            <img
-              id="img-ucab"
-              className="img-academica"
-              src={imgUCAB}
-              alt="Logo de UCAB"
-            />
           </div>
         </li>
         <li>
@@ -33,7 +31,12 @@ export default function CarreraUniversitaria() {
             Formación Autodidacta -{" "}
             <i>Programación Orientada a Objetos con C# y desarrollo en Unity</i>
           </h3>
-          <div className="div-academica">
+          <div className={styles.seccionAcademica}>
+            <img
+              className={styles.imgUnity}
+              src={imgUnity}
+              alt="Logo de Unity"
+            />
             <p>
               Durante una pausa académica por razones personales, profundicé por
               mi cuenta en programación orientada a objetos con C#. Apliqué
@@ -43,12 +46,6 @@ export default function CarreraUniversitaria() {
               interiorizar profundamente la lógica de programación y su relación
               con la estructura y reutilización del código.
             </p>
-            <img
-              id="img-unity"
-              className="img-academica"
-              src={imgUnity}
-              alt="Logo de Unity"
-            />
           </div>
         </li>
         <li>
@@ -56,7 +53,12 @@ export default function CarreraUniversitaria() {
             Universidad Nacional Experimental de la Gran Caracas (UNEXCA) -{" "}
             <i>Ingeniería en Informática (cursando)</i>
           </h3>
-          <div className="div-academica">
+          <div className={styles.seccionAcademica}>
+            <img
+              className={styles.imgUnexca}
+              src={imgUNEXCA}
+              alt="Logo de UNEXCA"
+            />
             <p>
               Decidí retomar formalmente mis estudios y actualmente curso la
               carrera de Ingeniería en Informática. Durante esta etapa, he
@@ -66,15 +68,9 @@ export default function CarreraUniversitaria() {
               en diseño de interfaces, estructuras lógicas y automatización de
               procesos.
             </p>
-            <img
-              id="img-unexca"
-              className="img-academica"
-              src={imgUNEXCA}
-              alt="Logo de UNEXCA"
-            />
           </div>
         </li>
       </ul>
-    </>
+    </Seccion>
   );
 }

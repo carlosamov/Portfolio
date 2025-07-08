@@ -1,12 +1,14 @@
 import imgEstudiantes from "../../../assets/GestionEstudiantes.jpeg";
 import Seccion from "../../Moléculas/Seccion/Seccion";
 
+import styles from "./GestionEstudiantes.module.css";
+
 export default function GestionEstudiantes() {
   return (
     <Seccion>
       <h2>Sistema de Gestión de Estudiantes</h2>
       <img
-        className="img-estudiantes"
+        className={styles.imgEstudiantes}
         src={imgEstudiantes}
         alt="Captura de estudiantes"
       />

@@ -37,6 +37,8 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  color: var(--main-texto);
 }
 
 .btnNavBar {
@@ -48,10 +50,10 @@
   cursor: pointer;
 }
 .btnNavBar.selected {
-  background-color: var(--main-secondary);
+  background-color: var(--secondary-fondo);
   color: var(--main-text);
 }
 .btnNavBar:hover {
-  background-color: var(--main-secondary);
+  background-color: var(--secondary-fondo);
   color: var(--main-text);
 }

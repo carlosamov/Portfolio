@@ -1,0 +1,30 @@
+.imgUCAB {
+  max-width: 120%;
+  width: 15%;
+
+  background-color: white;
+
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.imgUnity {
+  max-width: 120%;
+  width: 20%;
+}
+
+.imgUnexca {
+  max-width: 120%;
+  width: 15%;
+
+  background-color: white;
+
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.seccionAcademica {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
