@@ -12,17 +12,23 @@ export default function CarreraAcademica() {
       <ul>
         <li>
           <h3>
-            Universidad Católica Andres Bello (UCAB) -{" "}
-            <i>Ingeniería en Computación</i>
+            Universidad Nacional Experimental de la Gran Caracas (UNEXCA) -{" "}
+            <i>Ingeniería en Informática (cursando)</i>
           </h3>
           <div className={styles.seccionAcademica}>
-            <img className={styles.imgUCAB} src={imgUCAB} alt="Logo de UCAB" />
+            <img
+              className={styles.imgUnexca}
+              src={imgUNEXCA}
+              alt="Logo de UNEXCA"
+            />
             <p>
-              Cursé cinco semestres en esta institución, donde adquirí una
-              sólida base en programación estructurada y algoritmos usando C++.
-              Aprendí sobre estructuras de datos fundamentales y desarrollé un
-              sistema de gestión de estudiantes como proyecto en consola, lo que
-              me permitió afianzar mis primeros conocimientos aplicados.
+              Decidí retomar formalmente mis estudios y actualmente curso la
+              carrera de Ingeniería en Informática. Durante esta etapa, he
+              consolidado mis conocimientos a través del desarrollo de proyectos
+              más robustos, como un Sistema de Gestión de Estudiantes y un
+              Sistema de Automatización de Presupuestos, integrando lo aprendido
+              en diseño de interfaces, estructuras lógicas y automatización de
+              procesos.
             </p>
           </div>
         </li>
@@ -48,25 +54,20 @@ export default function CarreraAcademica() {
             />
           </div>
         </li>
+
         <li>
           <h3>
-            Universidad Nacional Experimental de la Gran Caracas (UNEXCA) -{" "}
-            <i>Ingeniería en Informática (cursando)</i>
+            Universidad Católica Andres Bello (UCAB) -{" "}
+            <i>Ingeniería en Computación</i>
           </h3>
           <div className={styles.seccionAcademica}>
-            <img
-              className={styles.imgUnexca}
-              src={imgUNEXCA}
-              alt="Logo de UNEXCA"
-            />
+            <img className={styles.imgUCAB} src={imgUCAB} alt="Logo de UCAB" />
             <p>
-              Decidí retomar formalmente mis estudios y actualmente curso la
-              carrera de Ingeniería en Informática. Durante esta etapa, he
-              consolidado mis conocimientos a través del desarrollo de proyectos
-              más robustos, como un Sistema de Gestión de Estudiantes y un
-              Sistema de Automatización de Presupuestos, integrando lo aprendido
-              en diseño de interfaces, estructuras lógicas y automatización de
-              procesos.
+              Cursé cinco semestres en esta institución, donde adquirí una
+              sólida base en programación estructurada y algoritmos usando C++.
+              Aprendí sobre estructuras de datos fundamentales y desarrollé un
+              sistema de gestión de estudiantes como proyecto en consola, lo que
+              me permitió afianzar mis primeros conocimientos aplicados.
             </p>
           </div>
         </li>

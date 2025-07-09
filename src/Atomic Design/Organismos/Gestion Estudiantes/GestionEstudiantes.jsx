@@ -5,7 +5,7 @@ import styles from "./GestionEstudiantes.module.css";
 
 export default function GestionEstudiantes() {
   return (
-    <Seccion>
+    <Seccion style="column">
       <h2>Sistema de Gestión de Estudiantes</h2>
       <img
         className={styles.imgEstudiantes}

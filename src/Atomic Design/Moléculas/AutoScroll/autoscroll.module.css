@@ -1,3 +1,20 @@
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
 .container {
   display: flex;
+  animation: autoScroll 100s linear infinite;
+  width: max-content;
+}
+
+@keyframes autoScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }

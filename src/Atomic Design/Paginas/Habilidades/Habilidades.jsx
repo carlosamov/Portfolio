@@ -8,20 +8,27 @@ import NavBar from "../../Moléculas/NavBar/NavBar";
 import { BotonNavBar } from "../../Atomos/Boton/Boton";
 import Seccion from "../../Moléculas/Seccion/Seccion";
 
+import { useGlobalContext } from "../../../Contexto/GlobalContext.jsx";
+
 export default function Habilidades() {
   const [page, setPage] = React.useState(0);
   const scrollContainerRef = React.useRef(null);
+
+  const ctx = useGlobalContext();
 
   const handleScroll = (index) => {
     setPage(index);
     const container = scrollContainerRef.current;
     const scrollAmount = container.offsetWidth * index;
     container.scrollTo({ left: scrollAmount, behavior: "smooth" });
+    ctx.scrollTo("proyectos");
   };
 
   return (
     <Seccion style="column">
-      <h2>Proyectos Destacados y Habilidades Aplicadas</h2>
+      <h2 ref={ctx.refs.proyectos}>
+        Proyectos Destacados y Habilidades Aplicadas
+      </h2>
       <NavBar>
         <BotonNavBar selected={page === 0} onClick={() => handleScroll(0)}>
           Sistema de Gestión de Estudiantes
