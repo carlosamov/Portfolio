@@ -32,11 +32,6 @@ export default function CarreraAcademica() {
             <i>Programación Orientada a Objetos con C# y desarrollo en Unity</i>
           </h3>
           <div className={styles.seccionAcademica}>
-            <img
-              className={styles.imgUnity}
-              src={imgUnity}
-              alt="Logo de Unity"
-            />
             <p>
               Durante una pausa académica por razones personales, profundicé por
               mi cuenta en programación orientada a objetos con C#. Apliqué
@@ -46,6 +41,11 @@ export default function CarreraAcademica() {
               interiorizar profundamente la lógica de programación y su relación
               con la estructura y reutilización del código.
             </p>
+            <img
+              className={styles.imgUnity}
+              src={imgUnity}
+              alt="Logo de Unity"
+            />
           </div>
         </li>
         <li>

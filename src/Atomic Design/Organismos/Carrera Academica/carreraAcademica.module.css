@@ -1,6 +1,6 @@
 .imgUCAB {
   max-width: 120%;
-  width: 15%;
+  width: 150px;
 
   background-color: white;
 
@@ -10,12 +10,13 @@
 
 .imgUnity {
   max-width: 120%;
-  width: 20%;
+  width: 150px;
+  padding: 15px;
 }
 
 .imgUnexca {
   max-width: 120%;
-  width: 15%;
+  width: 150px;
 
   background-color: white;
 

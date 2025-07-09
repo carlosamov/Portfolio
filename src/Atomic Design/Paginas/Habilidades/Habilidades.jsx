@@ -9,7 +9,7 @@ import { BotonNavBar } from "../../Atomos/Boton/Boton";
 import Seccion from "../../Moléculas/Seccion/Seccion";
 
 export default function Habilidades() {
-  const [page, setPage] = React.useState(1);
+  const [page, setPage] = React.useState(0);
   const scrollContainerRef = React.useRef(null);
 
   const handleScroll = (index) => {
@@ -43,19 +43,13 @@ export default function Habilidades() {
         }}
       >
         <div style={{ flex: "0 0 100%", scrollSnapAlign: "start" }}>
-          <Seccion>
-            <GestionEstudiantes />
-          </Seccion>
+          <GestionEstudiantes />
         </div>
         <div style={{ flex: "0 0 100%", scrollSnapAlign: "start" }}>
-          <Seccion>
-            <AutomatizacionPresupuestos />
-          </Seccion>
+          <AutomatizacionPresupuestos />
         </div>
         <div style={{ flex: "0 0 100%", scrollSnapAlign: "start" }}>
-          <Seccion>
-            <CarreraAcademica />
-          </Seccion>
+          <CarreraAcademica />
         </div>
       </div>
     </Seccion>

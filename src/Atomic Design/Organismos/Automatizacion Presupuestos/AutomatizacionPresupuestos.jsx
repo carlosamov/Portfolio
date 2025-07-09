@@ -5,10 +5,11 @@ import imgPresupuesto from "../../../assets/Presupuesto.png";
 import imgPresupuestos from "../../../assets/Presupuestos.png";
 import imgProductos from "../../../assets/Productos.png";
 import imgUsuarios from "../../../assets/Usuarios.png";
+import Seccion from "../../Moléculas/Seccion/Seccion";
 
 export default function AutomatizacionPresupuestos() {
   return (
-    <div>
+    <Seccion>
       <h2>Automatización de Presupuestos (En Progreso)</h2>
       <Carrusel
         images={[
@@ -43,6 +44,6 @@ export default function AutomatizacionPresupuestos() {
           entre componentes y afinar los conocimientos ya presentes de React.
         </p>
       </ul>
-    </div>
+    </Seccion>
   );
 }
