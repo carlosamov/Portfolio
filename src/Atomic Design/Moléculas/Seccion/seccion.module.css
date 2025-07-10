@@ -20,19 +20,14 @@
 
 @media (max-width: 768px) {
   .seccion {
-    width: 100%;
+    width: 90%;
     padding: 10px;
+    gap: 10px;
   }
 
   .column,
   .row {
     flex-direction: column;
     align-items: stretch;
-  }
-}
-
-@media (max-width: 480px) {
-  .seccion {
-    padding: 5px;
   }
 }

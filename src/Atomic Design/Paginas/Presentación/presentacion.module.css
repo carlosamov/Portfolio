@@ -1,0 +1,21 @@
+.texto {
+  flex: 1 1 50%;
+  width: 50%;
+}
+
+.h1 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.h2 {
+  font-size: 60px;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .texto {
+    width: 100%;
+    align-items: center;
+  }
+}

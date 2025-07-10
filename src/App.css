@@ -93,3 +93,18 @@ p {
 svg {
   color: var(--main-text);
 }
+
+@media (max-width: 768px) {
+  body {
+    font-size: 1rem; /* Tamaño de fuente más pequeño en pantallas pequeñas */
+  }
+
+  p {
+    padding: 0px 15px; /* Menos padding en pantallas pequeñas */
+  }
+
+  svg {
+    width: 24px; /* Iconos más pequeños en pantallas pequeñas */
+    height: 24px;
+  }
+}

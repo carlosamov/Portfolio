@@ -13,12 +13,15 @@ export const GlobalProvider = ({ children }) => {
     proyectos: React.useRef(null),
   };
   const scrollTo = (section) => {
-    const offset = 120;
+    //Calculo para el offset dinamico
+    const header = document.querySelector("header");
+    const headerHeight = header.getBoundingClientRect();
+    const headerOffset = headerHeight.height || 0;
     const element = refs[section]?.current;
     if (element) {
       const elementPosition =
         element.getBoundingClientRect().top + window.scrollY;
-      const scrollPosition = elementPosition - offset;
+      const scrollPosition = elementPosition - headerOffset - 20;
       window.scrollTo({
         top: scrollPosition,
         behavior: "smooth",

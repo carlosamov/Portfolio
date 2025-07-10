@@ -18,3 +18,14 @@
   display: flex;
   gap: 15px;
 }
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
