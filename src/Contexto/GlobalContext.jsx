@@ -11,11 +11,11 @@ export const GlobalProvider = ({ children }) => {
   const refs = {
     certificaciones: React.useRef(null),
     proyectos: React.useRef(null),
+    header: React.useRef(null),
   };
   const scrollTo = (section) => {
     //Calculo para el offset dinamico
-    const header = document.querySelector("header");
-    const headerHeight = header.getBoundingClientRect();
+    const headerHeight = refs.header.current.getBoundingClientRect();
     const headerOffset = headerHeight.height || 0;
     const element = refs[section]?.current;
     if (element) {

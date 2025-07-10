@@ -10,7 +10,7 @@ export default function Header() {
   const ctx = useGlobalContext();
 
   return (
-    <header className={styles.header}>
+    <header ref={ctx.refs.header} className={styles.header}>
       <h1>Mi portafolio</h1>
       <div className={styles.buttons}>
         <BotonHeader onClick={() => ctx.scrollTo("certificaciones")}>

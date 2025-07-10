@@ -1,6 +1,5 @@
 .navBar {
   display: flex;
   position: sticky;
-  top: 100px;
   z-index: 999;
 }

@@ -29,3 +29,10 @@
   flex-direction: row;
   align-items: center;
 }
+
+@media (max-width: 768px) {
+  .seccionAcademica {
+    flex-direction: column;
+    align-items: center;
+  }
+}

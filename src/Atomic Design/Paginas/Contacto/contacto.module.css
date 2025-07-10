@@ -9,8 +9,9 @@
 .wrapper {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  gap: 15px;
 }
 
 .bold {
@@ -22,23 +23,30 @@
   flex-direction: row;
   align-items: center;
   gap: 10px;
-  margin-top: 30px;
 }
 .titulos h2 {
-  margin: 0;
+  margin: 0px;
 }
 
 .correos a {
   color: var(--primary-texto);
   text-decoration: none;
+  padding: 10px;
 }
 
-.correos li {
-  list-style-type: none;
-  padding: 0;
-  margin: 10px;
+.correos {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  footer {
+    padding: 10px 5px;
+  }
 }

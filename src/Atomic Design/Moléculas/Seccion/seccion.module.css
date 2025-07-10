@@ -18,6 +18,14 @@
   align-items: center;
 }
 
+.noPadding {
+  padding: 0;
+}
+
+.noMargin {
+  margin: 0;
+}
+
 @media (max-width: 768px) {
   .seccion {
     width: 90%;
