@@ -12,7 +12,9 @@ import { useGlobalContext } from "../../../Contexto/GlobalContext.jsx";
 
 export default function Habilidades() {
   const [page, setPage] = React.useState(0);
+  const [height, setHeight] = React.useState();
   const scrollContainerRef = React.useRef(null);
+  const childrenRef = React.useRef([]);
 
   const ctx = useGlobalContext();
 
@@ -22,7 +24,14 @@ export default function Habilidades() {
     const scrollAmount = container.offsetWidth * index;
     container.scrollTo({ left: scrollAmount, behavior: "smooth" });
     ctx.scrollTo("proyectos");
+
+    console.log(childrenRef.current[index]?.offsetHeight);
+    setHeight(childrenRef.current[index]?.offsetHeight + "px" || "auto");
   };
+
+  React.useEffect(() => {
+    setHeight(childrenRef.current[page]?.offsetHeight + "px" || "auto");
+  }, []);
 
   return (
     <Seccion style="column">
@@ -44,18 +53,35 @@ export default function Habilidades() {
         ref={scrollContainerRef}
         style={{
           display: "flex",
-          overflowX: "hidden",
+          alignItems: "flex-start",
+          overflow: "hidden",
           scrollSnapType: "x mandatory",
           width: "100%",
+          height: height || "auto",
         }}
       >
-        <div style={{ flex: "0 0 100%", scrollSnapAlign: "start" }}>
+        <div
+          ref={(el) => {
+            childrenRef.current[0] = el;
+          }}
+          style={{ flex: "0 0 100%", scrollSnapAlign: "start" }}
+        >
           <GestionEstudiantes />
         </div>
-        <div style={{ flex: "0 0 100%", scrollSnapAlign: "start" }}>
+        <div
+          ref={(el) => {
+            childrenRef.current[1] = el;
+          }}
+          style={{ flex: "0 0 100%", scrollSnapAlign: "start" }}
+        >
           <AutomatizacionPresupuestos />
         </div>
-        <div style={{ flex: "0 0 100%", scrollSnapAlign: "start" }}>
+        <div
+          ref={(el) => {
+            childrenRef.current[2] = el;
+          }}
+          style={{ flex: "0 0 100%", scrollSnapAlign: "start" }}
+        >
           <CarreraAcademica />
         </div>
       </div>

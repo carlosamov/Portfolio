@@ -5,7 +5,7 @@ import styles from "./GestionEstudiantes.module.css";
 
 export default function GestionEstudiantes() {
   return (
-    <Seccion style="column">
+    <Seccion>
       <h2>Sistema de Gestión de Estudiantes</h2>
       <img
         className={styles.imgEstudiantes}
@@ -13,27 +13,30 @@ export default function GestionEstudiantes() {
         alt="Captura de estudiantes"
       />
       <p>
-        Desarrollé en su totalidad una aplicacion web integral para la gestion
-        de matriculación de estudiantes, junto con estadísticas de estudiantes
-        registrados a lo largo del tiempo, asi como administración de secciones.
+        Diseñé y construí una aplicación web completa para gestionar la
+        matriculación de estudiantes. Este proyecto incluye funcionalidades para
+        llevar un control de los alumnos registrados a lo largo del tiempo y
+        administrar las secciones de estudio.
       </p>
-      <h3>Tecnológias Aplicadas</h3>
+
+      <h3>Tecnologías que usé</h3>
       <ul>
         <li>
-          <b>Frontend con React:</b> Construí la interfaz de usuario interactiva
-          y responsiva, gestionando el estado de la aplicación y la comunicación
-          con el backend.
+          <b>Frontend con React:</b> Creé una interfaz de usuario interactiva y
+          adaptable, encargándome del manejo del estado y la comunicación con el
+          backend.
         </li>
         <li>
-          <b>Backend con C#:</b> Diseñé en su totalidad la API RESTful usando C#
-          con EmbedIO para el servidor y EntityFramework para manipular la base
-          de datos PostgreSQL.
+          <b>Backend con C#:</b> Desarrollé la API RESTful usando C# con EmbedIO
+          y me encargué de la manipulación de la base de datos PostgreSQL con
+          Entity Framework.
         </li>
-        <p>
-          Gracias a este proyecto aprendí a intercontectar los distintos
-          elementos de una apliación, siguiendo los patrones de diseño MVC.
-        </p>
       </ul>
+      <p>
+        Gracias a este proyecto, aprendí a conectar todos los componentes de una
+        aplicación, aplicando el patrón de diseño **MVC** para organizar el
+        código de manera eficiente.
+      </p>
     </Seccion>
   );
 }

@@ -21,29 +21,26 @@ export default function AutomatizacionPresupuestos() {
         ]}
       />
       <p>
-        Actualmente se encuentra en desarrollo una aplicacion web como proyecto
-        académico para la creación de una plataforma para automatizar el proceso
-        de elaboración y gestión de presupuestos.
+        Como proyecto académico, estoy construyendo una plataforma web para
+        automatizar la elaboración y gestión de presupuestos.
       </p>
-      <h3>Tecnológias Aplicadas</h3>
+      <h3>Tecnologías que estoy usando</h3>
       <ul>
         <li>
-          <b>Frontend con React:</b> Mi principal herramienta de creación de
-          interfaces es React, domino los Hooks basicos y entiendo el ciclo de
-          vida del componente de manera sólida.
+          <b>Frontend con React:</b> Utilicé React para la interfaz de usuario.
+          Domino los Hooks básicos y tengo un entendimiento sólido del ciclo de
+          vida de los componentes.
         </li>
         <li>
-          <p>
-            <b>Backend con Node.js:</b> Diseñé en su totalidad la API RESTful
-            usando Node.js con Express, para el servidor y Sequelize (un ORM
-            para Node.js) para manipular la base de datos PostgreSQL.
-          </p>
+          <b>Backend con Node.js:</b> Diseñé la API RESTful completa usando
+          Node.js con Express, y usé Sequelize (un ORM para Node.js) para
+          interactuar con la base de datos PostgreSQL.
         </li>
-        <p>
-          Gracias a este proyecto aprendí a crear una interacción más fluida
-          entre componentes y afinar los conocimientos ya presentes de React.
-        </p>
       </ul>
+      <p>
+        A través de este proyecto, he logrado crear una interacción más fluida
+        entre los componentes y he perfeccionado mis conocimientos de React.
+      </p>
     </Seccion>
   );
 }
