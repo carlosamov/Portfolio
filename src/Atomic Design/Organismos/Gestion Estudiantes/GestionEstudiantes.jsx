@@ -27,14 +27,14 @@ export default function GestionEstudiantes() {
           backend.
         </li>
         <li>
-          <b>Backend con C#:</b> Desarrollé la API RESTful usando C# con EmbedIO
-          y me encargué de la manipulación de la base de datos PostgreSQL con
-          Entity Framework.
+          <b>Backend con C#:</b> Desarrollé la API RESTful usando <b>C#</b>
+          con <b>EmbedIO</b> y me encargué de la manipulación de la base de
+          datos <b>PostgreSQL</b> con <b>Entity Framework</b>.
         </li>
       </ul>
       <p>
         Gracias a este proyecto, aprendí a conectar todos los componentes de una
-        aplicación, aplicando el patrón de diseño **MVC** para organizar el
+        aplicación, aplicando el patrón de diseño <b>MVC</b> para organizar el
         código de manera eficiente.
       </p>
     </Seccion>

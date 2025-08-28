@@ -30,16 +30,17 @@ export default function Certificaciones() {
       <Seccion style="column">
         <h1 ref={ctx.refs.certificaciones}>Certificaciones</h1>
         <p>
-          Mi formación en Platzi me ha permitido construir una base sólida en
-          programación y tecnologías web. A través de sus rutas de aprendizaje,
-          he fortalecido mis habilidades en áreas clave como C#, POO,
-          Javascript, React y Base de datos. Estos certificados son el resultado
-          de un aprendizaje activo y autodidacta, demostrando mi constancia y mi
+          Mi formación en <b>Platzi</b> me ha permitido construir una base
+          sólida en programación y tecnologías web. A través de sus rutas de
+          aprendizaje, he fortalecido mis habilidades en áreas clave como{" "}
+          <b>C#</b>, <b>POO</b>, <b>Javascript</b>, <b>React</b> y{" "}
+          <b>Base de datos</b>. Estos certificados son el resultado de un
+          aprendizaje activo y autodidacta, demostrando mi constancia y mi
           capacidad para adaptarme rápidamente a nuevas herramientas y
           conceptos.
         </p>
         <p>
-          Obtuve los certificados de Crestron como parte de mi formación
+          Obtuve los certificados de <b>Crestron</b> como parte de mi formación
           profesional en mi trabajo actual. Aunque provienen de un campo
           diferente, han sido fundamentales para desarrollar mi habilidad
           técnica y mi enfoque en la resolución de problemas. Este trabajo me

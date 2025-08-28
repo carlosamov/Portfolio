@@ -30,7 +30,7 @@ export default function Habilidades() {
   };
 
   React.useEffect(() => {
-    setHeight(childrenRef.current[page]?.offsetHeight + "px" || "auto");
+    setHeight(childrenRef.current[0]?.offsetHeight + "px" || "auto");
   }, []);
 
   return (

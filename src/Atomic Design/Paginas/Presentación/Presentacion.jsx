@@ -13,7 +13,9 @@ export default function Presentacion() {
       <div className={styles.texto}>
         <div>
           <h1 className={styles.h1}>Carlos Ovalles</h1>
-          <h3 className={styles.h3}>TSU en Informática - Programador Junior</h3>
+          <h3 className={styles.h3}>
+            <b>TSU en Informática - Programador Junior</b>
+          </h3>
         </div>
 
         <p>
