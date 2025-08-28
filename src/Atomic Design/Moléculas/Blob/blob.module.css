@@ -1,6 +1,6 @@
 .blob {
-  width: 270px;
-  height: 350px;
+  width: 200px;
+  height: 250px;
   background-color: var(--secondary-fondo);
   border-radius: 50%;
   z-index: 0;
@@ -8,7 +8,7 @@
 }
 
 .blob > * {
-  width: 250px;
+  height: 100%;
   object-fit: cover;
   display: block;
   margin: 0 auto 1rem auto;

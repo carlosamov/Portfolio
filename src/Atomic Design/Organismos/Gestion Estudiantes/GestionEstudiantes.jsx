@@ -25,11 +25,9 @@ export default function GestionEstudiantes() {
           con el backend.
         </li>
         <li>
-          <p>
-            <b>Backend con C#:</b> Diseñé en su totalidad la API RESTful usando
-            C# con EmbedIO para el servidor y EntityFramework para manipular la
-            base de datos PostgreSQL.
-          </p>
+          <b>Backend con C#:</b> Diseñé en su totalidad la API RESTful usando C#
+          con EmbedIO para el servidor y EntityFramework para manipular la base
+          de datos PostgreSQL.
         </li>
         <p>
           Gracias a este proyecto aprendí a intercontectar los distintos

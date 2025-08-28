@@ -11,21 +11,21 @@ export default function Presentacion() {
   return (
     <Seccion>
       <div className={styles.texto}>
-        <h2 className={styles.h1}>¡Hola! Soy</h2>
-        <h1 className={styles.h2}>Carlos Ovalles</h1>
+        <div>
+          <h1 className={styles.h1}>Carlos Ovalles</h1>
+          <h3 className={styles.h3}>TSU en Informática - Programador Junior</h3>
+        </div>
+
         <p>
-          Desarrollador web apasionado por crear experiencias digitales
-          atractivas y funcionales. Bienvenido a mi portafolio, donde podrás
-          conocer mis proyectos y habilidades.
-        </p>
-        <h2>Sobre Mi</h2>
-        <p>
-          Soy un desarrollador web con experiencia en la creación de
-          aplicaciones y sitios web. Me apasiona aprender nuevas tecnologías y
-          mejorar mis habilidades.
+          Soy un desarrollador web apasionado por crear experiencias digitales
+          atractivas y funcionales. Mi objetivo es construir aplicaciones y
+          sitios web que no solo sean visualmente agradables, sino también
+          intuitivos y eficientes. Constantemente busco aprender nuevas
+          tecnologías para ampliar mis habilidades y mantenerme al día con las
+          últimas tendencias de la industria. ¡Bienvenido a mi portafolio, donde
+          podrás conocer mis proyectos y mi evolución profesional!
         </p>
       </div>
-
       <Blob>
         <img src={imgCarlos} alt="imagen Carlos Ovalles" />
       </Blob>

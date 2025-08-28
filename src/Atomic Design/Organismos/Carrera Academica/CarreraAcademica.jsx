@@ -13,7 +13,7 @@ export default function CarreraAcademica() {
         <li>
           <h3>
             Universidad Nacional Experimental de la Gran Caracas (UNEXCA) -{" "}
-            <i>Ingeniería en Informática (cursando)</i>
+            <i>Cursando Ingenieria en informatica</i>
           </h3>
           <div className={styles.seccionAcademica}>
             <img
@@ -22,13 +22,14 @@ export default function CarreraAcademica() {
               alt="Logo de UNEXCA"
             />
             <p>
-              Decidí retomar formalmente mis estudios y actualmente curso la
-              carrera de Ingeniería en Informática. Durante esta etapa, he
-              consolidado mis conocimientos a través del desarrollo de proyectos
-              más robustos, como un Sistema de Gestión de Estudiantes y un
-              Sistema de Automatización de Presupuestos, integrando lo aprendido
-              en diseño de interfaces, estructuras lógicas y automatización de
-              procesos.
+              Me gradué como Técnico Superior Universitario (TSU) en
+              Informática, y ahora estoy cursando la Ingeniería en Informática
+              para seguir avanzando en mis estudios. Durante este tiempo, he
+              aplicado mis conocimientos en proyectos robustos como un{" "}
+              <b>Sistema de Gestión de Estudiantes</b> y un{" "}
+              <b>Sistema de Automatización de Presupuestos</b>. A través de
+              estos proyectos, he consolidado mis habilidades en el diseño de
+              interfaces, lógica de programación y automatización de procesos.
             </p>
           </div>
         </li>
@@ -39,13 +40,13 @@ export default function CarreraAcademica() {
           </h3>
           <div className={styles.seccionAcademica}>
             <p>
-              Durante una pausa académica por razones personales, profundicé por
-              mi cuenta en programación orientada a objetos con C#. Apliqué
-              estos conocimientos desarrollando videojuegos como pasatiempo con
-              Unity, entre ellos un nivel inspirado en Mario, interfaces
-              interactivas y enfrentamientos con jefes. Esta etapa me permitió
-              interiorizar profundamente la lógica de programación y su relación
-              con la estructura y reutilización del código.
+              Aproveché una pausa en mis estudios para enfocarme en la
+              programación autodidacta. Profundicé en la Programación Orientada
+              a Objetos con C#, aplicando estos conocimientos en proyectos con
+              Unity. Desarrollé un nivel estilo Mario, interfaces interactivas y
+              combates contra jefes, no solo como un pasatiempo, sino como una
+              forma de dominar la lógica de la programación y entender cómo se
+              estructura y reutiliza el código de forma práctica.
             </p>
             <img
               className={styles.imgUnity}
@@ -63,11 +64,12 @@ export default function CarreraAcademica() {
           <div className={styles.seccionAcademica}>
             <img className={styles.imgUCAB} src={imgUCAB} alt="Logo de UCAB" />
             <p>
-              Cursé cinco semestres en esta institución, donde adquirí una
-              sólida base en programación estructurada y algoritmos usando C++.
-              Aprendí sobre estructuras de datos fundamentales y desarrollé un
-              sistema de gestión de estudiantes como proyecto en consola, lo que
-              me permitió afianzar mis primeros conocimientos aplicados.
+              Durante mi formación en la UCAB, completé cinco semestres que me
+              proporcionaron una base sólida en programación estructurada y
+              algoritmos con C++. Apliqué estos conocimientos desarrollando un
+              sistema de gestión de estudiantes en consola, lo que me permitió
+              dominar conceptos fundamentales de estructuras de datos y llevar
+              la teoría a la práctica por primera vez en un proyecto real.
             </p>
           </div>
         </li>

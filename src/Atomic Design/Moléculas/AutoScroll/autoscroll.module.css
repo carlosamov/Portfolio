@@ -6,8 +6,9 @@
 
 .container {
   display: flex;
-  animation: autoScroll 100s linear infinite;
+  animation: autoScroll 80s linear infinite;
   width: max-content;
+  height: 300px;
 }
 
 @keyframes autoScroll {
