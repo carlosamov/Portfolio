@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 import GestionEstudiantes from "../../Organismos/Gestion Estudiantes/GestionEstudiantes";
 import AutomatizacionPresupuestos from "../../Organismos/Automatizacion Presupuestos/AutomatizacionPresupuestos";
