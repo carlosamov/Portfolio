@@ -4,8 +4,8 @@ import styles from "./presentacion.module.css";
 
 import imgCarlos from "../../../assets/foto de perfil.jpeg";
 
-import Seccion from "../../Moléculas/Seccion/Seccion";
-import Blob from "../../Moléculas/Blob/Blob";
+import Seccion from "../../Base/Seccion/Seccion";
+import Blob from "../../Base/Blob/Blob";
 
 export default function Presentacion() {
   return (

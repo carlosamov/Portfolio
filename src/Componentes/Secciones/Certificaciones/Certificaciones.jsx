@@ -4,8 +4,8 @@ import styles from "./certificaciones.module.css";
 
 import { useGlobalContext } from "../../../Contexto/GlobalContext.jsx";
 
-import AutoScroll from "../../Moléculas/AutoScroll/AutoScroll.jsx";
-import Seccion from "../../Moléculas/Seccion/Seccion.jsx";
+import AutoScroll from "../../Complejos/AutoScroll/AutoScroll.jsx";
+import Seccion from "../../Base/Seccion/Seccion.jsx";
 
 import imgCrestron1 from "../../../assets/Cursos/Crestron/CCT.jpg";
 import imgCrestron2 from "../../../assets/Cursos/Crestron/D-4K.jpg";

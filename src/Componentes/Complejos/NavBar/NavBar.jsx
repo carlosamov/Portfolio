@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from "./nav.module.css";
 
-import { useGlobalContext } from "../../../Contexto/GlobalContext";
+import { useGlobalContext } from "../../../../Contexto/GlobalContext";
 
 export default function NavBar(props) {
   const ctx = useGlobalContext();

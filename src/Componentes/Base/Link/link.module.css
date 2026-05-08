@@ -1,0 +1,8 @@
+.link {
+  background-color: transparent;
+  color: inherit;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
