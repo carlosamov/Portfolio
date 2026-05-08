@@ -26,23 +26,13 @@
   font-style: normal;
 }
 
-/*
-body.light {
-  --main-fondo: #fff;
-  --main-texto: #222;
-
-  --secondary-fondo: #cacaca;
-  --secondary-texto: #222;
+body {
+  margin: 0px;
+  padding: 0px;
+  font-size: 1.2rem;
+  background: var(--main-fondo);
+  color: var(--main-texto);
 }
-
-body.dark {
-  --main-fondo: #222;
-  --main-texto: #fff;
-
-  --secondary-fondo: #3e3e3e;
-  --secondarty-texto: #cacaca;
-}
-*/
 body.light {
   --main-fondo: #ffffff; /* Fondo principal un beige muy claro y cálido */
   --main-texto: #3d2b1f; /* Texto principal un marrón oscuro para buen contraste */
@@ -57,25 +47,21 @@ body.light {
   --error-color: #c25b5b; /* Rojo para error */
 }
 body.dark {
-  --main-fondo: #2c3e50; /* Fondo principal un azul oscuro petróleo */
-  --main-texto: #ecf0f1; /* Texto principal un gris azulado muy claro */
+  /*Fondos*/
+  --main-fondo: #1d2935;
+  --secondary-fondo: #3a4c63;
+  --grandient-1: linear-gradient(
+    30deg,
+    var(--secondary-fondo),
+    var(--main-fondo)
+  );
 
-  --secondary-fondo: #34495e; /* Fondo secundario azul oscuro más suave */
-  --secondary-texto: #bdc3c7; /* Texto secundario gris azulado medio */
+  /*Textos*/
+  --main-texto: #ffffff;
+  --secondary-texto: #e0e0e0;
 
-  --accent-color: #2ecc71; /* Color de acento (verde esmeralda vibrante) */
-  --border-color: #4a6572; /* Color para bordes azul grisáceo */
-
-  --success-color: #58d68d; /* Verde más claro para éxito */
-  --error-color: #e74c3c; /* Rojo brillante para error */
-}
-
-body {
-  margin: 0px;
-  padding: 0px;
-  font-size: 1.2rem;
-  background: var(--main-fondo);
-  color: var(--main-texto);
+  /*Color complementario*/
+  --complementary-fondo: #be7d6c;
 }
 
 * {

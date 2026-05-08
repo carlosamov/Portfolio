@@ -1,0 +1,15 @@
+/*Titulos*/
+.hero_name p {
+  font-size: 1.5rem;
+  color: var(--main-texto);
+  margin: 0px;
+}
+
+.hero_name p:nth-child(2) {
+  font-weight: bold;
+  font-size: 6rem;
+  color: var(--secondary-fondo);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  width: fit-content;
+  background-clip: text;
+}

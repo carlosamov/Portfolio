@@ -4,12 +4,11 @@ import styles from "./presentacion.module.css";
 
 import imgCarlos from "../../../assets/foto de perfil.jpeg";
 
-import Seccion from "../../Base/Seccion/Seccion";
 import Blob from "../../Base/Blob/Blob";
 
 export default function Presentacion() {
   return (
-    <Seccion>
+    <section>
       <div className={styles.texto}>
         <div>
           <h1 className={styles.h1}>Carlos Ovalles</h1>
@@ -31,6 +30,6 @@ export default function Presentacion() {
       <Blob>
         <img src={imgCarlos} alt="imagen Carlos Ovalles" />
       </Blob>
-    </Seccion>
+    </section>
   );
 }

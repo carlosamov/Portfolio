@@ -1,53 +1,3 @@
-.btnHeader {
-  border: none;
-  border-radius: 100px;
-
-  background-color: var(--main-fondo);
-  color: inherit;
-  cursor: pointer;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-  padding: 0px 15px;
-  min-width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  transition: transform 0.1s ease-in-out;
-}
-.btnHeader:hover {
-  transform: scale(1.1);
-}
-.btnHeader:active {
-  transform: scale(0.95);
-}
-
-.btnNavigation {
-  font-size: 2rem;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-
-  color: var(--main-texto);
-}
-
-.btnNavBar {
-  flex: 1 1;
-
-  border: 0px;
-  padding: 10px;
-
-  cursor: pointer;
-}
-.btnNavBar.selected {
-  background-color: var(--secondary-fondo);
-  color: var(--main-text);
-}
-.btnNavBar:hover {
-  background-color: var(--secondary-fondo);
-  color: var(--main-text);
-}
-
 /*boton 1 > Cabecera*/
 .btnHeader {
   border: none;
@@ -65,4 +15,12 @@
   align-items: center;
   justify-content: center;
   transition: transform 0.1s ease-in-out;
+}
+
+.btnHeader:hover {
+  transform: scale(1.1);
+}
+
+.btnHeader:active {
+  transform: scale(0.95);
 }

@@ -5,7 +5,6 @@ import styles from "./certificaciones.module.css";
 import { useGlobalContext } from "../../../Contexto/GlobalContext.jsx";
 
 import AutoScroll from "../../Complejos/AutoScroll/AutoScroll.jsx";
-import Seccion from "../../Base/Seccion/Seccion.jsx";
 
 import imgCrestron1 from "../../../assets/Cursos/Crestron/CCT.jpg";
 import imgCrestron2 from "../../../assets/Cursos/Crestron/D-4K.jpg";
@@ -27,7 +26,7 @@ export default function Certificaciones() {
   const ctx = useGlobalContext();
   return (
     <div>
-      <Seccion style="column">
+      <section style="column">
         <h1 ref={ctx.refs.certificaciones}>Certificaciones</h1>
         <p>
           Mi formación en <b>Platzi</b> me ha permitido construir una base
@@ -50,7 +49,7 @@ export default function Certificaciones() {
           versátil, con capacidad para dominar nuevas tecnologías y buscar
           soluciones en cualquier contexto.
         </p>
-      </Seccion>
+      </section>
       <AutoScroll>
         <img className={styles.img} src={imgPlatzi1} alt="Platzi" />
         <img className={styles.img} src={imgPlatzi2} alt="Platzi" />

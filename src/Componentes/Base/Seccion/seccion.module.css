@@ -1,46 +1,10 @@
 .seccion {
-  margin: 10px auto;
-  width: 60%;
-  min-width: 700px;
-
-  padding: 20px;
   display: flex;
-
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.column {
   flex-direction: column;
-}
-
-.row {
-  flex-direction: row;
   align-items: center;
-}
-
-.noPadding {
-  padding: 0;
-}
-
-.noMargin {
-  margin: 0;
-}
-
-@media (max-width: 768px) {
-  .seccion {
-    width: 90%;
-    min-width: 0px;
-    padding: 10px;
-    gap: 10px;
-
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .column,
-  .row {
-    flex-direction: column;
-    align-items: stretch;
-  }
+  justify-content: center;
+  margin: 20px;
+  width: 80%;
+  max-width: 1200px;
+  min-width: 600px;
 }

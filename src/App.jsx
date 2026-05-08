@@ -9,6 +9,9 @@ import Habilidades from "./Componentes/Secciones/Habilidades/Habilidades.jsx";
 import Certificaciones from "./Componentes/Secciones/Certificaciones/Certificaciones.jsx";
 import Contacto from "./Componentes/Secciones/Contacto/Contacto.jsx";
 
+//Nuevo contenido
+import Hero from "./Componentes/Secciones/Rediseño de Secciones/Hero.jsx";
+
 export default function App() {
   const ctx = useGlobalContext();
 
@@ -19,10 +22,15 @@ export default function App() {
   return (
     <>
       <Cabecera />
-      <Presentacion />
-      <Certificaciones />
-      <Habilidades />
-      <Contacto />
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
+      >
+        <Hero />
+      </div>
     </>
   );
 }
