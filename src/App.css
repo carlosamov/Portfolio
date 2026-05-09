@@ -32,19 +32,16 @@ body {
   font-size: 1.2rem;
   background: var(--main-fondo);
   color: var(--main-texto);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 body.light {
   --main-fondo: #ffffff; /* Fondo principal un beige muy claro y cálido */
   --main-texto: #3d2b1f; /* Texto principal un marrón oscuro para buen contraste */
 
-  --secondary-fondo: #eae3da; /* Fondo secundario gris topo claro */
+  --secondary-fondo: #e6c9b3; /* Fondo secundario gris topo claro */
   --secondary-texto: #5e4a3f; /* Texto secundario marrón grisáceo */
 
-  --accent-color: #d4a778; /* Color de acento (terracota suave) */
-  --border-color: #c3b4a2; /* Color para bordes sutiles */
-
-  --success-color: #6b9b5a; /* Verde para éxito */
-  --error-color: #c25b5b; /* Rojo para error */
+  --complementary-fondo: #be7d6c; /* Color complementario un terracota suave */
 }
 body.dark {
   /*Fondos*/

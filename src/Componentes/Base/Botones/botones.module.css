@@ -1,3 +1,18 @@
+/*CSS dinamico para todos*/
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.1s ease-in-out, color 0.1s ease-in-out;
+}
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
 /*boton 1 > Cabecera*/
 .btnHeader {
   border: none;
@@ -10,17 +25,17 @@
   padding: 0px 15px;
   min-width: 40px;
   height: 40px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.1s ease-in-out;
 }
 
-.btnHeader:hover {
-  transform: scale(1.1);
-}
+/*Boton 2 > Principal*/
+.btnPrimary {
+  border: none;
 
-.btnHeader:active {
-  transform: scale(0.95);
+  background-color: var(--main-texto);
+  color: var(--main-fondo);
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  min-width: 80px;
+  height: fit-content;
 }

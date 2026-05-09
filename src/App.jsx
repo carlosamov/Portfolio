@@ -10,7 +10,7 @@ import Certificaciones from "./Componentes/Secciones/Certificaciones/Certificaci
 import Contacto from "./Componentes/Secciones/Contacto/Contacto.jsx";
 
 //Nuevo contenido
-import Hero from "./Componentes/Secciones/Rediseño de Secciones/Hero.jsx";
+import Hero from "./Componentes/Secciones/Rediseño de Secciones/Hero/Hero.jsx";
 
 export default function App() {
   const ctx = useGlobalContext();

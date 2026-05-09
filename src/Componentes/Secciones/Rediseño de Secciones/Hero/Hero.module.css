@@ -13,3 +13,20 @@
   width: fit-content;
   background-clip: text;
 }
+
+.hero_links{
+  display: flex;
+  gap: 1rem;
+  padding: 0px 25px;
+}
+
+.hero_links a {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.hero_links a:hover {
+  transform: scale(1.1);
+}
+.hero_links a:active {
+  color: #bbbbbb;
+  transform: scale(0.95);
+}

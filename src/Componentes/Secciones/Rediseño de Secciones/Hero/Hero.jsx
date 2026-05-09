@@ -1,8 +1,12 @@
-import Blob from "../../Base/Blob/Blob.jsx";
-import imgCarlos from "../../../assets/foto de perfil.jpeg";
-import Section from "../../Base/Seccion/Seccion.jsx";
+import Blob from "../../../Base/Blob/Blob.jsx";
+import Section from "../../../Base/Seccion/Seccion.jsx";
+import Link from "../../../Base/Link/Link.jsx";
+import { BtnPrimary } from "../../../Base/Botones/Botones.jsx";
 
 import styles from "./Hero.module.css";
+
+import imgCarlos from "../../../../assets/foto de perfil.jpeg";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Hero() {
   return (
@@ -21,6 +25,18 @@ export default function Hero() {
           arquitecturas de componentes reutilizables, aseguro una integración
           fluida entre la experiencia de usuario y la lógica de servidor.
         </p>
+
+        <div className={styles.hero_links}>
+          <Link href="https://www.linkedin.com/in/carlos-ovalles-4760a423b/">
+          <FaLinkedin size={28}/>
+        </Link>
+        <Link href="https://github.com/carlosamov">
+          <FaGithub size={28}/>
+        </Link>
+        <BtnPrimary onClick={() => window.open("https://drive.google.com/file/d/1n9l8mXo2s5a3e7j6v9k8l0p1q2r3s4t/view?usp=sharing", "_blank")}>
+          Descargar CV
+        </BtnPrimary>
+        </div>
       </div>
       <Blob>
         <img src={imgCarlos} alt="imagen Carlos Ovalles" />
