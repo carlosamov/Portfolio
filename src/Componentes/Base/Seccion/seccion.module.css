@@ -8,3 +8,19 @@
   max-width: 1200px;
   min-width: 600px;
 }
+
+.fadeIn{
+  animation: appear 1s ease-in-out forwards;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

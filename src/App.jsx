@@ -19,16 +19,16 @@ export default function App() {
     document.body.className = ctx.theme;
   }, [ctx.theme]);
 
-  return (
-    <>
-      <Cabecera />
-      <div
-        style={{
+  const estiloSeccion = {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-        }}
-      >
+        };
+
+  return (
+    <>
+      <Cabecera />
+      <div style={estiloSeccion}>
         <Hero />
       </div>
     </>
