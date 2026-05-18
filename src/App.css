@@ -59,15 +59,37 @@ body.dark {
 
   /*Color complementario*/
   --complementary-fondo: #be7d6c;
+
+  /*Bento*/
+  --bento-bg: #2a3846;
 }
 
 * {
   font-family: "Quicksand", sans-serif;
 }
 
+h1,
+h2 {
+  margin: 0px;
+  font-weight: bold;
+  color: var(--secondary-fondo);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  width: fit-content;
+  background-clip: text;
+  text-align: left;
+  width: 100%;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
 p {
   text-align: justify;
-  padding: 0px 25px;
 }
 
 svg {

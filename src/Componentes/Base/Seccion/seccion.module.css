@@ -2,14 +2,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin: 20px;
+  gap: 30px;
+  margin: 20px auto;
   width: 80%;
-  max-width: 1200px;
+  max-width: 1000px;
   min-width: 600px;
 }
 
-.fadeIn{
+.fadeIn {
   animation: appear 1s ease-in-out forwards;
 }
 
@@ -23,4 +23,3 @@
     transform: translateY(0);
   }
 }
-

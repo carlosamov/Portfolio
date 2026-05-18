@@ -1,0 +1,43 @@
+/*Configuracion base de Grid + Bento*/
+.bento_grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+.bento {
+  display: flex;
+  align-content: start;
+  flex-wrap: wrap;
+  background-color: var(--bento-bg);
+  box-shadow: 2px 2px 5px rgb(14, 30, 59);
+  width: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+}
+.bento img {
+  width: 100%;
+}
+.bento p {
+  padding: 0px 20px;
+}
+
+/*Configuracion de cada seccion*/
+.info_proyecto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px 20px;
+  gap: 10px;
+}
+.bento h3 {
+  text-align: left;
+  font-size: 2rem;
+  width: 100%;
+  padding: 0px 20px;
+}
+
+.proyecto_principal {
+  grid-column: span 2;
+}

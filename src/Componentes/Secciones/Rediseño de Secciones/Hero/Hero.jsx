@@ -3,7 +3,7 @@ import Section from "../../../Base/Seccion/Seccion.jsx";
 import Link from "../../../Base/Link/Link.jsx";
 import { BtnPrimary } from "../../../Base/Botones/Botones.jsx";
 
-import styles from "./Hero.module.css";
+import styles from "./hero.module.css";
 
 import imgCarlos from "../../../../assets/foto de perfil.jpeg";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -28,14 +28,21 @@ export default function Hero() {
 
         <div className={styles.hero_links}>
           <Link href="https://www.linkedin.com/in/carlos-ovalles-4760a423b/">
-          <FaLinkedin size={28}/>
-        </Link>
-        <Link href="https://github.com/carlosamov">
-          <FaGithub size={28}/>
-        </Link>
-        <BtnPrimary onClick={() => window.open("https://drive.google.com/file/d/1n9l8mXo2s5a3e7j6v9k8l0p1q2r3s4t/view?usp=sharing", "_blank")}>
-          Descargar CV
-        </BtnPrimary>
+            <FaLinkedin size={28} />
+          </Link>
+          <Link href="https://github.com/carlosamov">
+            <FaGithub size={28} />
+          </Link>
+          <BtnPrimary
+            onClick={() =>
+              window.open(
+                "https://drive.google.com/file/d/11dtzW-gtkDluDV0oEnuRqmg7KAh0GN20/view?usp=drive_link",
+                "_blank"
+              )
+            }
+          >
+            Descargar CV
+          </BtnPrimary>
         </div>
       </div>
       <Blob>

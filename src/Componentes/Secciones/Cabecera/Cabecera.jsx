@@ -11,7 +11,7 @@ export default function Header() {
 
   return (
     <header ref={ctx.refs.header} className={styles.header}>
-      <h1>Mi portafolio</h1>
+      <p>Carlos Ovalles | Portafolio</p>
       <div className={styles.buttons}>
         <BtnHeader onClick={() => ctx.scrollTo("certificaciones")}>
           Certificaciones

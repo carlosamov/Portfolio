@@ -2,46 +2,52 @@ import React from "react";
 
 import styles from "./carrusel.module.css";
 
-import { FaArrowAltCircleRight } from "react-icons/fa";
-import { FaArrowAltCircleLeft } from "react-icons/fa";
-
-import { BotonNavigation } from "../../Atomos/Boton/Boton";
-
 export default function Carrusel(props) {
   const [index, setIndex] = React.useState(0);
+  const [animar, setAnimar] = React.useState(true);
+  const timeoutRef = React.useRef(null);
 
-  const next = () => {
-    setIndex((prev) => (prev + 1) % props.images.length);
-  };
+  React.useEffect(() => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    if (!animar) return () => clearTimeout(timeoutRef.current);
 
-  const prev = () => {
-    setIndex((prev) => (prev - 1 + props.images.length) % props.images.length);
-  };
+    timeoutRef.current = setTimeout(() => {
+      setIndex((prevIndex) =>
+        prevIndex === props.imgs.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 5000);
+
+    return () => clearTimeout(timeoutRef.current);
+  }, [index, animar]);
 
   return (
-    <div className={styles.carrusel}>
-      <BotonNavigation onClick={prev}>
-        <FaArrowAltCircleLeft />
-      </BotonNavigation>
-      <div className={styles.carruselContainer}>
-        <div
-          className={styles.carruselFrame}
-          style={{ transform: `translateX(-${index * 100}%)` }}
-        >
-          {props.images.map((img, i) => (
-            <img
-              className={styles.img}
-              key={i}
-              src={img}
-              alt={"Slide " + i}
-            ></img>
-          ))}
-        </div>
+    <div className={styles.contenedor}>
+      <div
+        className={styles.imagenes}
+        style={{ transform: `translateX(-${index * 100}%)` }}
+      >
+        {props.imgs.map((img, i) => (
+          <img key={i} src={img} alt={"Slide " + i} />
+        ))}
       </div>
-
-      <BotonNavigation onClick={next}>
-        <FaArrowAltCircleRight />
-      </BotonNavigation>
+      <div className={styles.botonera}>
+        {props.imgs.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => {
+              setIndex(i);
+              setAnimar(false);
+            }}
+            className={index === i && animar ? styles.active : ""}
+          >
+            <div
+              style={{
+                width: index === i ? "100%" : "0%",
+              }}
+            ></div>
+          </button>
+        ))}
+      </div>
     </div>
   );
 }
