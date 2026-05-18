@@ -1,11 +1,11 @@
-import Blob from "../../../Base/Blob/Blob.jsx";
-import Section from "../../../Base/Seccion/Seccion.jsx";
-import Link from "../../../Base/Link/Link.jsx";
-import { BtnPrimary } from "../../../Base/Botones/Botones.jsx";
+import Blob from "../../Base/Blob/Blob.jsx";
+import Section from "../../Base/Seccion/Seccion.jsx";
+import Link from "../../Base/Link/Link.jsx";
+import { BtnPrimary } from "../../Base/Botones/Botones.jsx";
 
 import styles from "./hero.module.css";
 
-import imgCarlos from "../../../../assets/foto de perfil.jpeg";
+import imgCarlos from "../../../assets/foto_carlos.jpeg";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Hero() {

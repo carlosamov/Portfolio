@@ -1,6 +1,6 @@
 import React from "react";
-import Section from "../../../Base/Seccion/Seccion";
-import Carrusel from "../../../Complejos/Carrusel/Carrusel";
+import Section from "../../Base/Seccion/Seccion.jsx";
+import Carrusel from "../../Complejos/Carrusel/Carrusel";
 
 import styles from "./proyectos.module.css";
 
