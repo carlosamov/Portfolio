@@ -20,17 +20,29 @@ export default function Proyectos() {
             ]}
           />
 
-          <p>
-            Solución Full Stack diseñada para digitalizar y centralizar el flujo
-            de trabajo de la empresa, sustituyendo la gestión manual por un
-            entorno dinámico y eficiente. Construido con el Stack PERN (
-            <b>PostgreSQL, Express, React.js, Node.js</b>), el sistema aprovecha
-            la potencia de los WebSockets para facilitar el trabajo colaborativo
-            en tiempo real. Esta integración permite que el equipo coedite
-            presupuestos de forma simultánea, garantizando la sincronización
-            instantánea de los datos y manteniendo la consistencia de la
-            información sin fricciones ni retrasos operativos.
-          </p>
+          <div>
+            <p>
+              Solución Full Stack diseñada para digitalizar y centralizar el
+              flujo de trabajo de la empresa, sustituyendo la gestión manual por
+              un entorno dinámico y eficiente. Construido con el Stack PERN (
+              <b>PostgreSQL, Express, React.js, Node.js</b>), el sistema
+              aprovecha la potencia de los WebSockets para facilitar el trabajo
+              colaborativo en tiempo real. Esta integración permite que el
+              equipo coedite presupuestos de forma simultánea, garantizando la
+              sincronización instantánea de los datos y manteniendo la
+              consistencia de la información sin fricciones ni retrasos
+              operativos.
+            </p>
+
+            <p>
+              Puedes ver una demo del proyecto{" "}
+              <a href="https://ui-presupuestos.vercel.app/" target="_blank">
+                Aqui
+              </a>
+            </p>
+
+            <p>Usuario: p-visitante, Contraseña: visitante123*</p>
+          </div>
         </div>
         <div className={styles.bento}>
           <h3>Sistema de gestión de estudiantes</h3>

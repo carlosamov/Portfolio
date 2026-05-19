@@ -7,6 +7,7 @@
 }
 .bento {
   display: flex;
+  flex-direction: column;
   align-content: start;
   flex-wrap: wrap;
   background-color: var(--bento-bg);
@@ -19,7 +20,14 @@
   width: 100%;
 }
 .bento p {
+  margin: 20px 0px;
   padding: 0px 20px;
+}
+.bento a {
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  color: #ff00f2;
 }
 
 /*Configuracion de cada seccion*/
