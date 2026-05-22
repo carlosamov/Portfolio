@@ -34,14 +34,21 @@ export default function Proyectos() {
               operativos.
             </p>
 
-            <p>
-              Puedes ver una demo del proyecto{" "}
-              <a href="https://ui-presupuestos.vercel.app/" target="_blank">
-                Aqui
-              </a>
-            </p>
-
-            <p>Usuario: p-visitante, Contraseña: visitante123*</p>
+            <div className={styles.demo_credentials}>
+              <p>
+                Puedes ver una versión demo de mi proyecto{" ➡ "}
+                <a href="https://ui-presupuestos.vercel.app/" target="_blank">
+                  🔗Aqui
+                </a>
+              </p>
+              <p>(Permita las cookies para poder iniciar sesión!)</p>
+              <p>
+                <b>Usuario:</b> p-visitante
+              </p>
+              <p>
+                <b>Contraseña:</b> visitante123*
+              </p>
+            </div>
           </div>
         </div>
         <div className={styles.bento}>

@@ -20,14 +20,13 @@
   width: 100%;
 }
 .bento p {
-  margin: 20px 0px;
   padding: 0px 20px;
 }
 .bento a {
   font-weight: bold;
   text-decoration: none;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  color: #ff00f2;
+  color: inherit;
 }
 
 /*Configuracion de cada seccion*/
@@ -42,10 +41,19 @@
 .bento h3 {
   text-align: left;
   font-size: 2rem;
-  width: 100%;
-  padding: 0px 20px;
+  padding-left: 20px;
 }
 
 .proyecto_principal {
   grid-column: span 2;
+}
+
+.demo_credentials {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 12px;
+  margin: 12px;
+}
+.demo_credentials p {
+  margin: 5px 0;
 }
