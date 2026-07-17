@@ -1,5 +1,5 @@
 import Blob from "../../Base/Blob/Blob.jsx";
-import Section from "../../Base/Seccion/Seccion.jsx";
+import Seccion from "../../Base/Seccion/Seccion.jsx";
 import Link from "../../Base/Link/Link.jsx";
 import { BtnPrimary } from "../../Base/Botones/Botones.jsx";
 
@@ -10,7 +10,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Hero() {
   return (
-    <Section style={{ flexDirection: "row" }}>
+    <Seccion style={{ flexDirection: "row" }}>
       <div>
         <div className={styles.hero_name}>
           <p>Hola, soy</p>
@@ -48,6 +48,6 @@ export default function Hero() {
       <Blob>
         <img src={imgCarlos} alt="imagen Carlos Ovalles" />
       </Blob>
-    </Section>
+    </Seccion>
   );
 }
