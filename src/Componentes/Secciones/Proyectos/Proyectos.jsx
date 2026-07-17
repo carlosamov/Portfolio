@@ -1,12 +1,12 @@
 import React from "react";
-import Section from "../../Base/Seccion/Seccion.jsx";
+import Seccion from "../../Base/Seccion/Seccion.jsx";
 import Carrusel from "../../Complejos/Carrusel/Carrusel";
 
 import styles from "./proyectos.module.css";
 
 export default function Proyectos() {
   return (
-    <Section>
+    <Seccion>
       <h2>Proyectos</h2>
       <div className={styles.bento_grid}>
         <div className={styles.bento + " " + styles.proyecto_principal}>
@@ -80,6 +80,6 @@ export default function Proyectos() {
           </p>
         </div>
       </div>
-    </Section>
+    </Seccion>
   );
 }
