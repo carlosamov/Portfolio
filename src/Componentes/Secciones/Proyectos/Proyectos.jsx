@@ -3,6 +3,14 @@ import Seccion from "../../Base/Seccion/Seccion.jsx";
 import Carrusel from "../../Complejos/Carrusel/Carrusel";
 import { useGlobalContext } from "../../../Contexto/GlobalContext.jsx";
 
+import imgPresupuesto1 from "../../../assets/presupuesto_1.jpeg";
+import imgPresupuesto2 from "../../../assets/presupuesto_2.jpeg";
+import imgPresupuesto3 from "../../../assets/presupuesto_3.jpeg";
+import imgPresupuesto4 from "../../../assets/presupuesto_4.jpeg";
+import imgEstudiantes1 from "../../../assets/estudiantes_1.jpeg";
+import imgFinanceFlow1 from "../../../assets/finance_flow_1.png";
+import imgFinanceFlow2 from "../../../assets/finance_flow_2.png";
+
 import styles from "./proyectos.module.css";
 
 export default function Proyectos() {
@@ -16,10 +24,10 @@ export default function Proyectos() {
           <h3>Sistema de automatización de presupuestos</h3>
           <Carrusel
             imgs={[
-              "src/assets/presupuesto_1.jpeg",
-              "src/assets/presupuesto_2.jpeg",
-              "src/assets/presupuesto_3.jpeg",
-              "src/assets/presupuesto_4.jpeg",
+              imgPresupuesto1,
+              imgPresupuesto2,
+              imgPresupuesto3,
+              imgPresupuesto4,
             ]}
           />
 
@@ -57,7 +65,7 @@ export default function Proyectos() {
         <div className={styles.bento}>
           <h3>Sistema de gestión de estudiantes</h3>
           <img
-            src="src/assets/estudiantes_1.jpeg"
+            src={imgEstudiantes1}
             alt="Imagen de proyecto de gestion de estudiantes"
           />
           <p>
@@ -69,12 +77,7 @@ export default function Proyectos() {
         </div>
         <div className={styles.bento}>
           <h3>Finance Flow: Sistema de gestión multidivisa</h3>
-          <Carrusel
-            imgs={[
-              "src/assets/finance_flow_1.png",
-              "src/assets/finance_flow_2.png",
-            ]}
-          />
+          <Carrusel imgs={[imgFinanceFlow1, imgFinanceFlow2]} />
           <p>
             Plataforma financiera actualmente en etapa de prototipado UI/UX en
             Figma. Su arquitectura técnica está proyectada bajo Clean
