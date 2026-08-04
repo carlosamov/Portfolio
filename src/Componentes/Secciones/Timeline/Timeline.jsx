@@ -11,7 +11,7 @@ export default function Timeline() {
 
   return (
     <Seccion secRef={refs.linea_temporal}>
-      <h2 className={styles.timeline_titulo}>Linea temporal</h2>
+      <h2 className={styles.timeline_titulo}>Mi trayectoria</h2>
       <div className={styles.timeline}>
         <TimelineItem
           titulo="Operador Técnico e Integrador IT"

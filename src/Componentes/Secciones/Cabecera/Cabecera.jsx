@@ -17,7 +17,7 @@ export default function Header() {
           Proyectos
         </BtnHeader>
         <BtnHeader onClick={() => ctx.scrollTo("linea_temporal")}>
-          Linea Temporal
+          Mi trayectoria
         </BtnHeader>
         <BtnHeader
           onClick={() => ctx.setTheme(ctx.theme === "light" ? "dark" : "light")}
@@ -25,7 +25,7 @@ export default function Header() {
           {ctx.theme === "light" ? <FaMoon /> : <FaSun />}
         </BtnHeader>
         <div className={styles.buttons + " " + styles.links}>
-          <Link href="https://www.linkedin.com/in/carlos-ovalles-4760a423b/">
+          <Link href="https://www.linkedin.com/in/carlos-ovalles/">
             <FaLinkedin />
           </Link>
           <Link href="https://github.com/carlosamov">

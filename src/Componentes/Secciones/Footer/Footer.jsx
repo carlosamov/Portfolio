@@ -19,7 +19,7 @@ export default function Footer() {
           <Link href="mailto:carlosamov@gmail.com">
             <FaEnvelope size={28} />
           </Link>
-          <Link href="https://www.linkedin.com/in/carlos-ovalles-4760a423b/">
+          <Link href="https://www.linkedin.com/in/carlos-ovalles/">
             <FaLinkedin size={28} />
           </Link>
           <Link href="https://github.com/carlosamov">
