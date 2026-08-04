@@ -1,12 +1,39 @@
-# React + Vite
+# Portafolio Personal - Carlos Ovalles
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+¡Bienvenido a mi repositorio! Este proyecto contiene el código fuente de mi portafolio personal interactivo, desarrollado para mostrar mis habilidades técnicas, proyectos destacados y experiencia en desarrollo de software.
 
-Currently, two official plugins are available:
+## Propósito
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este repositorio está pensado para que reclutadores, líderes técnicos y colegas puedan revisar la calidad de mi código, la arquitectura del proyecto y las buenas prácticas que aplico en mis desarrollos frontend.
 
-## Expanding the ESLint configuration
+## Tecnologías y Herramientas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend:** React, Vite
+- **Estilos:** CSS (Global y Módulos)
+- **Arquitectura:** Patrón Atomic Design (Átomos, Moléculas, Organismos, Páginas)
+- **Control de Versiones:** Git / GitHub
+
+## Estructura del Código
+
+El proyecto está organizado para ser escalable y mantenible:
+
+- `src/Atomic Design/` - Contiene la interfaz de usuario segmentada según el patrón de Diseño Atómico.
+- `src/Contexto/` - Manejo del estado global de la aplicación.
+- `src/assets/` - Recursos estáticos, imágenes y multimedia.
+
+## Ejecución Local
+
+Para revisar el proyecto en tu entorno local, ejecuta los siguientes comandos en tu terminal:
+
+    git clone https://github.com/carlosamov/Portfolio.git
+    cd portfolio
+    npm install
+    npm run dev
+
+## Contacto profesional
+
+Si mi perfil se ajusta a lo que tu equipo está buscando, me encantaría conversar:
+
+- **LinkedIn:** https://www.linkedin.com/in/carlos-ovalles/
+- **Email:** carlosamov@gmail.com
+- **Sitio Web:** https://carlosamov.github.io/Portfolio/

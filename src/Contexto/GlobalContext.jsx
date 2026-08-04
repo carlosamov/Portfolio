@@ -9,9 +9,9 @@ export const GlobalProvider = ({ children }) => {
     theme: "dark",
   });
   const refs = {
-    certificaciones: React.useRef(null),
-    proyectos: React.useRef(null),
     header: React.useRef(null),
+    proyectos: React.useRef(null),
+    linea_temporal: React.useRef(null),
   };
   const scrollTo = (section) => {
     //Calculo para el offset dinamico

@@ -1,0 +1,74 @@
+/*Configuracion base de Grid + Bento*/
+.bento_grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .bento_grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  h2.proyectos_titulo {
+    font-size: 2rem;
+  }
+
+  div.bento h3 {
+    font-size: 1rem;
+  }
+}
+.bento {
+  display: flex;
+  flex-direction: column;
+  align-content: start;
+  flex-wrap: wrap;
+  background-color: var(--bento-bg);
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+}
+.bento img {
+  width: 100%;
+}
+.bento p {
+  padding: 0px 20px;
+}
+.bento a {
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  color: inherit;
+}
+
+/*Configuracion de cada seccion*/
+.info_proyecto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px 20px;
+  gap: 10px;
+}
+.bento h3 {
+  text-align: left;
+  font-size: 2rem;
+  padding-left: 20px;
+}
+
+.proyecto_principal {
+  grid-column: span 2;
+}
+
+.demo_credentials {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 12px;
+  margin: 12px;
+}
+.demo_credentials p {
+  margin: 5px 0;
+}

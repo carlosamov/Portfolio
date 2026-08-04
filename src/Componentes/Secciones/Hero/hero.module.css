@@ -1,0 +1,42 @@
+/*Titulos*/
+.hero_name p {
+  font-size: 1rem;
+  color: var(--main-texto);
+  margin: 0px;
+}
+
+.hero_name p:nth-child(2) {
+  font-weight: bold;
+  font-size: 6rem;
+  color: var(--secondary-fondo);
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  width: fit-content;
+  background-clip: text;
+}
+
+.hero_links {
+  display: flex;
+  gap: 1rem;
+  padding: 0px 25px;
+}
+
+.hero_links a {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.hero_links a:hover {
+  transform: scale(1.1);
+}
+.hero_links a:active {
+  color: #bbbbbb;
+  transform: scale(0.95);
+}
+
+@media screen and (max-width: 768px) {
+  .hero_name p:nth-child(2) {
+    font-size: 2rem;
+  }
+
+  .hero_blob {
+    display: none;
+  }
+}

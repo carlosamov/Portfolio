@@ -3,11 +3,13 @@ import React from "react";
 import { useGlobalContext } from "./Contexto/GlobalContext.jsx";
 
 import "./App.css";
-import Cabecera from "./Atomic Design/Paginas/Cabecera/Cabecera.jsx";
-import Presentacion from "./Atomic Design/Paginas/Presentación/Presentacion.jsx";
-import Habilidades from "./Atomic Design/Paginas/Habilidades/Habilidades.jsx";
-import Certificaciones from "./Atomic Design/Paginas/Certificaciones/Certificaciones.jsx";
-import Contacto from "./Atomic Design/Paginas/Contacto/Contacto.jsx";
+import Cabecera from "./Componentes/Secciones/Cabecera/Cabecera.jsx";
+
+//Nuevo contenido
+import Hero from "./Componentes/Secciones/Hero/Hero.jsx";
+import Proyectos from "./Componentes/Secciones/Proyectos/Proyectos.jsx";
+import Timeline from "./Componentes/Secciones/Timeline/Timeline.jsx";
+import Footer from "./Componentes/Secciones/Footer/Footer.jsx";
 
 export default function App() {
   const ctx = useGlobalContext();
@@ -19,10 +21,10 @@ export default function App() {
   return (
     <>
       <Cabecera />
-      <Presentacion />
-      <Certificaciones />
-      <Habilidades />
-      <Contacto />
+      <Hero />
+      <Proyectos />
+      <Timeline />
+      <Footer />
     </>
   );
 }
