@@ -9,6 +9,7 @@ import Cabecera from "./Componentes/Secciones/Cabecera/Cabecera.jsx";
 import Hero from "./Componentes/Secciones/Hero/Hero.jsx";
 import Proyectos from "./Componentes/Secciones/Proyectos/Proyectos.jsx";
 import Timeline from "./Componentes/Secciones/Timeline/Timeline.jsx";
+import Footer from "./Componentes/Secciones/Footer/Footer.jsx";
 
 export default function App() {
   const ctx = useGlobalContext();
@@ -23,6 +24,7 @@ export default function App() {
       <Hero />
       <Proyectos />
       <Timeline />
+      <Footer />
     </>
   );
 }
