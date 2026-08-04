@@ -24,6 +24,6 @@ El proyecto está organizado para ser escalable y mantenible:
 
 Si mi perfil se ajusta a lo que tu equipo está buscando, me encantaría conversar:
 
-- **LinkedIn:** https://www.linkedin.com/in/carlos-ovalles/
-- **Email:** carlosamov@gmail.com
-- **Sitio Web:** https://carlosamov.github.io/Portfolio/
+- **LinkedIn:** <https://www.linkedin.com/in/carlos-ovalles/>
+- **Email:** <carlosamov@gmail.com>
+- **Sitio Web:** <https://carlosamov.github.io/Portfolio/>
