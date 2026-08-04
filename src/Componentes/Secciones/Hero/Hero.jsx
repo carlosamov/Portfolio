@@ -10,7 +10,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Hero() {
   return (
-    <Seccion style={{ flexDirection: "row" }}>
+    <Seccion direction="row">
       <div>
         <div className={styles.hero_name}>
           <p>Hola, soy</p>

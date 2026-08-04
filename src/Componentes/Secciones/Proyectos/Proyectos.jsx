@@ -1,12 +1,15 @@
 import React from "react";
 import Seccion from "../../Base/Seccion/Seccion.jsx";
 import Carrusel from "../../Complejos/Carrusel/Carrusel";
+import { useGlobalContext } from "../../../Contexto/GlobalContext.jsx";
 
 import styles from "./proyectos.module.css";
 
 export default function Proyectos() {
+  const { refs } = useGlobalContext();
+
   return (
-    <Seccion>
+    <Seccion secRef={refs.proyectos}>
       <h2>Proyectos</h2>
       <div className={styles.bento_grid}>
         <div className={styles.bento + " " + styles.proyecto_principal}>

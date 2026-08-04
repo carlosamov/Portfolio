@@ -4,12 +4,13 @@ import Seccion from "../../Base/Seccion/Seccion.jsx";
 
 import styles from "./timeline.module.css";
 
-import img_1 from "../../../assets/presupuesto_1.jpeg";
-import img_2 from "../../../assets/presupuesto_2.jpeg";
+import { useGlobalContext } from "../../../Contexto/GlobalContext.jsx";
 
 export default function Timeline() {
+  const { refs } = useGlobalContext();
+
   return (
-    <Seccion>
+    <Seccion secRef={refs.linea_temporal}>
       <h2>Linea temporal</h2>
       <div className={styles.timeline}>
         <TimelineItem

@@ -105,9 +105,4 @@ svg {
   p {
     padding: 0px 15px; /* Menos padding en pantallas pequeñas */
   }
-
-  svg {
-    width: 24px; /* Iconos más pequeños en pantallas pequeñas */
-    height: 24px;
-  }
 }

@@ -14,7 +14,7 @@
   background-clip: text;
 }
 
-.hero_links{
+.hero_links {
   display: flex;
   gap: 1rem;
   padding: 0px 25px;
@@ -29,4 +29,10 @@
 .hero_links a:active {
   color: #bbbbbb;
   transform: scale(0.95);
+}
+
+@media screen and (max-width: 768px) {
+  .hero_name p:nth-child(2) {
+    font-size: 4rem;
+  }
 }

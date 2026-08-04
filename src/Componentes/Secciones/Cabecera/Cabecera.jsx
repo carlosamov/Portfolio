@@ -13,11 +13,11 @@ export default function Header() {
     <header ref={ctx.refs.header} className={styles.header}>
       <p>Carlos Ovalles | Portafolio</p>
       <div className={styles.buttons}>
-        <BtnHeader onClick={() => ctx.scrollTo("certificaciones")}>
-          Certificaciones
-        </BtnHeader>
         <BtnHeader onClick={() => ctx.scrollTo("proyectos")}>
           Proyectos
+        </BtnHeader>
+        <BtnHeader onClick={() => ctx.scrollTo("linea_temporal")}>
+          Linea Temporal
         </BtnHeader>
         <BtnHeader
           onClick={() => ctx.setTheme(ctx.theme === "light" ? "dark" : "light")}
