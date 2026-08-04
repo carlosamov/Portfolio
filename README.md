@@ -10,25 +10,15 @@ Este repositorio está pensado para que reclutadores, líderes técnicos y coleg
 
 - **Frontend:** React, Vite
 - **Estilos:** CSS (Global y Módulos)
-- **Arquitectura:** Patrón Atomic Design (Átomos, Moléculas, Organismos, Páginas)
 - **Control de Versiones:** Git / GitHub
 
 ## Estructura del Código
 
 El proyecto está organizado para ser escalable y mantenible:
 
-- `src/Atomic Design/` - Contiene la interfaz de usuario segmentada según el patrón de Diseño Atómico.
-- `src/Contexto/` - Manejo del estado global de la aplicación.
-- `src/assets/` - Recursos estáticos, imágenes y multimedia.
-
-## Ejecución Local
-
-Para revisar el proyecto en tu entorno local, ejecuta los siguientes comandos en tu terminal:
-
-    git clone https://github.com/carlosamov/Portfolio.git
-    cd portfolio
-    npm install
-    npm run dev
+- `src/Componentes/Base` - Contiene la componentes pequeños que manejan logica sencilla.
+- `src/Componentes/Complejos` - Contiene componentes complejos, funcionalidades como carrusel de fotos o la logica para la barra de navegacion.
+- `src/Componentes/Secciones` - Secciones enteras de la pagina web.
 
 ## Contacto profesional
 
