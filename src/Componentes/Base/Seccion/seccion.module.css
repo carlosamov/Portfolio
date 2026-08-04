@@ -36,5 +36,6 @@
   .seccion {
     flex-direction: column;
     min-width: 100px;
+    width: 90%;
   }
 }

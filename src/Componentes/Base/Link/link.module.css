@@ -6,3 +6,8 @@
   align-items: center;
   justify-content: center;
 }
+
+.link:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}

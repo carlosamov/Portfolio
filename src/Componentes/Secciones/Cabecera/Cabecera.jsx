@@ -24,12 +24,14 @@ export default function Header() {
         >
           {ctx.theme === "light" ? <FaMoon /> : <FaSun />}
         </BtnHeader>
-        <Link href="https://www.linkedin.com/in/carlos-ovalles-4760a423b/">
-          <FaLinkedin />
-        </Link>
-        <Link href="https://github.com/carlosamov">
-          <FaGithub />
-        </Link>
+        <div className={styles.buttons + " " + styles.links}>
+          <Link href="https://www.linkedin.com/in/carlos-ovalles-4760a423b/">
+            <FaLinkedin />
+          </Link>
+          <Link href="https://github.com/carlosamov">
+            <FaGithub />
+          </Link>
+        </div>
       </div>
     </header>
   );

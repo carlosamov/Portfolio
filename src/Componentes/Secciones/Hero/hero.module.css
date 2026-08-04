@@ -1,6 +1,6 @@
 /*Titulos*/
 .hero_name p {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: var(--main-texto);
   margin: 0px;
 }
@@ -33,6 +33,10 @@
 
 @media screen and (max-width: 768px) {
   .hero_name p:nth-child(2) {
-    font-size: 4rem;
+    font-size: 2rem;
+  }
+
+  .hero_blob {
+    display: none;
   }
 }

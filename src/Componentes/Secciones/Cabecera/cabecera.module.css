@@ -24,6 +24,10 @@
     flex-direction: column;
   }
 
+  .links {
+    display: none;
+  }
+
   .buttons {
     flex-wrap: wrap;
     justify-content: center;

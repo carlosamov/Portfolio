@@ -10,7 +10,7 @@ export default function Proyectos() {
 
   return (
     <Seccion secRef={refs.proyectos}>
-      <h2>Proyectos</h2>
+      <h2 className={styles.proyectos_titulo}>Proyectos</h2>
       <div className={styles.bento_grid}>
         <div className={styles.bento + " " + styles.proyecto_principal}>
           <h3>Sistema de automatización de presupuestos</h3>

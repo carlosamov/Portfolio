@@ -45,7 +45,7 @@ export default function Hero() {
           </BtnPrimary>
         </div>
       </div>
-      <Blob>
+      <Blob className={styles.hero_blob}>
         <img src={imgCarlos} alt="imagen Carlos Ovalles" />
       </Blob>
     </Seccion>

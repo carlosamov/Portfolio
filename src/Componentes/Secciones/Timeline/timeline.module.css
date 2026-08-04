@@ -47,3 +47,23 @@
 .timeline_item:nth-child(odd)::after {
   right: -28px;
 }
+
+@media screen and (max-width: 768px) {
+  h2.timeline_titulo {
+    font-size: 2rem;
+  }
+
+  .timeline_item {
+    width: 100%;
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  .timeline::after {
+    left: 0px;
+  }
+
+  .timeline_item::after {
+    left: 0px;
+  }
+}
